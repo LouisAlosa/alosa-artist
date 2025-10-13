@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useState, useEffect } from "react"
 
 // Import all 8 images with their correct order 
+// Images used in the hero section background section
 import DesmondTutu1 from "../../assets/images/heroimages/desmond-tutu-1.jpg" 
 import JasonStatham2 from "../../assets/images/heroimages/jason-statham-2.jpg" 
 import KhabiLame3 from "../../assets/images/heroimages/khabi-lame-3.jpg" 
@@ -12,6 +13,11 @@ import FaithOdhiambo5 from "../../assets/images/heroimages/faith-odhiambo-5.jpg"
 import FerdinandOmanyala6 from "../../assets/images/heroimages/ferdinand-omanyala-6.jpg" 
 import GeorgeLucas7 from "../../assets/images/heroimages/george-lucas-7.jpg" 
 import Pele8 from "../../assets/images/heroimages/pele-8.jpg"
+
+// Import the three images to be used in the happy faces section
+import NataliaOyer1 from "../../assets/images/heroimages/happyfaces/natalia-oyer-1.jpg"
+import MaxineWabosha2 from "../../assets/images/heroimages/happyfaces/maxine-wabosha-2.jpg" 
+import MoisesArias3 from "../../assets/images/heroimages/happyfaces/moises-arias-3.jpg" 
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -37,6 +43,13 @@ const Hero = () => {
     { src: FerdinandOmanyala6, alt: "Ferdinand Omanyala caricature", position: 6 },
     { src: GeorgeLucas7, alt: "George Lucas caricature", position: 7 },
     { src: Pele8, alt: "Pele caricature", position: 8 },
+  ]
+
+  // Array of images for the happy faces section
+  const happyfaces = [
+    { src: NataliaOyer1, alt: "Natalia Oyer caricature", position: 1 },
+    { src: MaxineWabosha2, alt: "Maxine Wabosha caricature", position: 2 },
+    { src: MoisesArias3, alt: "Moise Aria caricature", position: 3 }
   ]
 
   return (
@@ -116,10 +129,29 @@ const Hero = () => {
 
           {/* Happy Faces Section */}
           <div className="flex gap-3 mb-8">
+            {/* Happy Faces Avatars */}
             <div className="flex -space-x-2">
-              {[...Array(5)].map((_, index) => (
+              {happyfaces.map((face, index) => (
                 <div
                   key={index}
+                  className="relative rounded-full border-2 border-dark-charcoal overflow-hidden"
+                  style={{
+                    width: "31.82px",
+                    height: "31.82px",
+                  }}
+                >
+                  <Image
+                    src={face.src}
+                    alt={face.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+              {/* Add 2 more empty circles to maintain the total of 5 */}
+              {[...Array(0)].map((_, index) => (
+                <div
+                  key={`empty-${index}`}
                   className="rounded-full border-2 border-dark-charcoal bg-light-gray"
                   style={{
                     width: "31.82px",
@@ -128,12 +160,12 @@ const Hero = () => {
                 />
               ))}
             </div>
-
+            
+            {/* Happy Faces Text */}
             <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-light-gray">
               200+ happy faces
             </span>
           </div>
-
           {/* Scroll Down Button */}
           <button
             onClick={() => {
