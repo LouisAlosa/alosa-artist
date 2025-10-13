@@ -53,7 +53,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark-charcoal">
+    <section className="relative min-h-[80vh] lg:max-h-[65vh] xl:max-h-[70vh] flex items-center justify-center overflow-hidden bg-dark-charcoal py-12 lg:py-24">
       {/* Background Caricatures Grid */}
       <div className="absolute inset-0 z-0 flex flex-col gap-1">
         {/* Row 1 - First 4 images */}
@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
 
       {/* Global Overlay (covers all background images) */}
-      <div className="absolute inset-0 bg-deep-charcoal opacity-100 z-[1]" />
+      <div className="absolute inset-0 bg-deep-charcoal opacity-92 z-[1]" />
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-[5%]">
@@ -104,13 +104,13 @@ const Hero = () => {
           }`}
         >
           {/* Main Title */}
-          <h1 className="font-fredoka font-[400] text-[48px] tracking-[0%] mb-6">
-            <span className="text-pure-white block">Personality</span>
-            <span className="text-bright-yellow block">Exaggerated</span>
+          <h1 className="font-fredoka font-[400] text-[48px] leading-[50px] lg:text-[58px] lg:leading-[60px] tracking-[0%] mb-6">
+            <span className="block lg:inline text-pure-white">Personality </span>
+            <span className="block lg:inline text-bright-yellow">Exaggerated</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="font-inter text-[18px] font-[400] tracking-[0%] text-light-gray mb-8">
+          <p className="font-inter text-[18px] lg:text-[20px] font-[400] leading-[32px] tracking-[0%] text-light-gray mb-8 max-w-full lg:max-w-2xl">
             Get yourself and your loved ones personalized caricatures as memorable gifts. 
             You can also bring your event to life with custom live caricatures drawn by me.
           </p>
