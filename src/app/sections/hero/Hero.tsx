@@ -136,26 +136,53 @@ const Hero = () => {
 
           {/* Scroll Down Button */}
           <button
-            onClick={scrollToAbout}
+            onClick={() => {
+              document.getElementById("about")?.scrollIntoView({ behavior: "auto" });
+            }}
             className="flex flex-col items-center gap-2 mx-auto group"
             aria-label="Scroll to about section"
           >
-            <div
-              className="rounded-full flex justify-center border-2 border-bright-yellow"
-              style={{
-                width: "32px",
-                height: "48px",
-              }}
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="transition-all duration-300 group-hover:scale-110 group-active:scale-95"
             >
-              <div
-                className="rounded-full bg-bright-yellow mt-2 group-hover:translate-y-1 transition-transform duration-300"
-                style={{
-                  width: "4px",
-                  height: "12px",
-                }}
+              <rect
+                x="1"
+                y="1"
+                width="46"
+                height="46"
+                rx="23"
+                ry="23"
+                fill="#FFD60A"
+                className="transition-colors duration-300 group-hover:fill-sunset-orange"
               />
-            </div>
-            <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-bright-yellow">
+              
+              {/* Arrow */}
+              <g className="transition-transform duration-500 ease-out group-hover:translate-y-2">
+                <line
+                  x1="24"
+                  y1="16"
+                  x2="24"
+                  y2="28"
+                  stroke="#2B2B2B"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <polyline
+                  points="20,24 24,28 28,24"
+                  fill="none"
+                  stroke="#2B2B2B"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+            </svg>
+            <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-dark-charcoal transition-colors duration-300 group-hover:text-sunset-orange">
               Scroll Down
             </span>
           </button>
