@@ -35,13 +35,21 @@ const AboutAlosa = () => {
           </div>
         </div>
 
-        {/* RIGHT: Placeholder for text content (optional, you can add later) */}
-        <div className="text-center lg:text-left max-w-lg">
-          <h2 className="font-fredoka text-[28px] sm:text-[36px] font-[400] text-dark-charcoal mb-4">
+        {/* RIGHT: Placeholder for text content */}
+        <div className="w-full">
+          <h2 className="font-fredoka text-[36px] font-[400] text-dark-charcoal mb-4">
             About Alosa
           </h2>
-          <p className="font-inter text-[16px] sm:text-[18px] text-gray-600 leading-[28px]">
-            Your personalized caricature artist, capturing every smile and detail with creativity and color.
+
+          {/* The divider hr-ish section which is silver in colour */}
+          <div className="bg-silver-gray w-[80px] p-1"></div>
+
+          <p className="mt-4 font-inter text-[18px] text-medium-gray mb-4">
+            Louis Alosa is a caricature artist based in Nairobi, Kenya. His love for art began in childhood, sketching in school books and drawing inspiration from cartoonists Gado and KJ (Hon. John Kiarie). For the past 9 years, he has mastered the art of whimsical exaggeration, believing that everyone has a cartoon version of themselves waiting to be set free.
+          </p>
+
+          <p className="font-inter text-[18px] text-medium-gray mb-4">
+            Louis has spent the last 5 years energizing weddings, corporate events, and festivals with live caricatures transforming rooms into laughter-filled galleries. He has worked with brands and events such as PWC (2022), Safaricom Dealer Awards (2025), Capital Club Anniversary (2024), Colgate Campaign (2024), Exotel Workshops (2023 - 2024), and Mavuno Church (2023). He also collaborated with Africa Uncensored on The Big Picture Show (2022 - 2023).
           </p>
         </div>
       </div>
