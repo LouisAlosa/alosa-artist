@@ -25,13 +25,15 @@ const AboutAlosa = () => {
           </div>
 
           {/* Small Tilted Image Overlay */}
-          <div className="absolute bottom-[-20px] right-[-10px] w-[100px] h-[90px] sm:w-[120px] sm:h-[110px] lg:w-[140px] lg:h-[120px] transform rotate-6 rounded-xl shadow-lg overflow-hidden border-4 border-white bg-white">
+          <div className="absolute bottom-[-20px] right-[-10px] w-[100px] h-[90px] sm:w-[120px] sm:h-[110px] lg:w-[140px] lg:h-[120px] transform rotate-6 rounded-xl shadow-lg overflow-hidden">
             <Image
               src={SmallCaricature}
               alt="Small caricature overlay"
               fill
-              className="object-cover rounded-xl"
+              className="object-cover"
             />
+            {/* Soft dark overlay */}
+            <div className="absolute inset-0 bg-dark-charcoal/30 z-[1]" />
           </div>
         </div>
 
