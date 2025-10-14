@@ -13,7 +13,7 @@ const AboutAlosa = () => {
           {/* Yellow Circle Border */}
           <div className="absolute inset-0 rounded-full border-[8px] border-bright-yellow"></div>
 
-          {/* Main Image (centered inside yellow border) */}
+          {/* Main Image */}
           <div className="relative w-full h-full rounded-full overflow-hidden">
             <Image
               src={MainCaricature}
@@ -33,31 +33,103 @@ const AboutAlosa = () => {
               className="object-cover"
             />
             {/* Soft dark overlay */}
-            <div className="absolute inset-0 bg-dark-charcoal/30 z-[1]" />
+            <div className="absolute inset-0 bg-dark-charcoal/20 z-[1]" />
           </div>
         </div>
 
-        {/* RIGHT: Placeholder for text content */}
+        {/* RIGHT: Text Content */}
         <div className="w-full">
           <h2 className="font-fredoka text-[36px] font-[400] text-dark-charcoal mb-4">
             About Alosa
           </h2>
 
-          {/* The divider hr-ish section which is silver in colour */}
+          {/* Divider */}
           <div className="bg-silver-gray w-[80px] p-1"></div>
 
-          <p className="mt-4 font-inter text-[18px] text-medium-gray mb-4">
+          {/* Paragraphs */}
+          <p className="mt-4 font-inter text-[18px] leading-[28px] text-medium-gray mb-4">
             Louis Alosa is a caricature artist based in Nairobi, Kenya. His love for art began in childhood, sketching in school books and drawing inspiration from cartoonists Gado and KJ (Hon. John Kiarie). For the past 9 years, he has mastered the art of whimsical exaggeration, believing that everyone has a cartoon version of themselves waiting to be set free.
           </p>
 
-          <p className="font-inter text-[18px] text-medium-gray mb-4">
+          <p className="font-inter text-[18px] leading-[28px] text-medium-gray mb-10">
             Louis has spent the last 5 years energizing weddings, corporate events, and festivals with live caricatures transforming rooms into laughter-filled galleries. He has worked with brands and events such as PWC (2022), Safaricom Dealer Awards (2025), Capital Club Anniversary (2024), Colgate Campaign (2024), Exotel Workshops (2023 - 2024), and Mavuno Church (2023). He also collaborated with Africa Uncensored on The Big Picture Show (2022 - 2023).
           </p>
+
+          {/* Achievements Section */}
+          <div className="space-y-5">
+            {/* Item 1 */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
+                {/* Media Collaboration SVG (Solid) */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#E67E22"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-inter text-dark-charcoal text-[18px] font-[400]">
+                  Media Collaboration
+                </h3>
+                <p className="font-inter text-medium-gray text-[16px] font-[400]">
+                  Africa Uncensored
+                </p>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
+                {/* Experience SVG (Solid Clock) */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#E67E22"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1 11h-2V7h2zm0 0h4v2h-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-inter text-dark-charcoal text-[18px] font-[400]">
+                  9 Years Experience
+                </h3>
+                <p className="font-inter text-medium-gray text-[16px] font-[400]">
+                  Full Time Caricature Artist
+                </p>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
+                {/* Award SVG (Solid Trophy) */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#E67E22"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M18 2h-3V1a1 1 0 0 0-2 0v1H8a1 1 0 0 0-1 1v3a5 5 0 0 0 4 4.9V14H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-3.1A5 5 0 0 0 17 6V3a1 1 0 0 0-1-1zm-1 4a3 3 0 0 1-6 0V4h6z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-inter text-dark-charcoal text-[18px] font-[400]">
+                  Notable Event
+                </h3>
+                <p className="font-inter text-medium-gray text-[16px] font-[400]">
+                  Safaricom’s Dealer of the Year Awards 2025
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className=""></div>
     </section>
   )
 }
 
-export default AboutAlosa;
+export default AboutAlosa
