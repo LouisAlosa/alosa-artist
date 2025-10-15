@@ -1,19 +1,57 @@
 "use client"
 
-const MyServicesTopBar = () => {
-    return (
-        <div className="bg-pure-white w-full text-center">
-            {/* Services intro section */}
-            <div className="my-4 flex items-center flex-col justify-center">
-                <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">My Services</h2>
-                <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
+import { useState } from "react"
 
-                <p className="font-inter font-[400] text-medium-gray text-[18px]">
-                    Looking for that unique gift? Something extraordinary? Whether it's for a birthday, a retirement, baby shower, friendship or a 'just because'; caricature as a gift will always win.
-                </p>
-            </div>
-        </div>
-    )
+const MyServicesTopBar = () => {
+  // Active service pill state
+  const [activeService, setActiveService] = useState("Event Caricatures")
+
+  const services = [
+    "Event Caricatures",
+    "Caricatures From Photos",
+    "Wedding eCards",
+  ]
+
+  return (
+    <section className="bg-pure-white w-full text-center">
+      {/* Services intro section */}
+      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto">
+        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] leading-[40px] mb-4">
+          My Services
+        </h2>
+
+        <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
+
+        <p className="font-inter font-[400] text-medium-gray text-[18px] leading-[28px] max-w-[640px]">
+          Looking for that unique gift? Something extraordinary? Whether it's for a birthday,
+          a retirement, baby shower, friendship or a 'just because'; caricature as a gift will
+          always win.
+        </p>
+      </div>
+
+      {/* Pills / Button Section */}
+      <div className="flex flex-wrap justify-center gap-4 mt-10">
+        {services.map((service) => {
+            const isActive = activeService === service
+            return (
+            <button
+                key={service}
+                onClick={() => setActiveService(service)}
+                className={`w-[230px] py-3 rounded-[12px] font-fredoka font-[400] text-[16px] transition-all duration-200
+                ${
+                    isActive
+                    ? "bg-carrot-orange text-pure-white shadow-md"
+                    : "bg-silver-gray text-dark-charcoal hover:bg-carrot-orange/80 hover:text-pure-white"
+                }`}
+                type="button"
+            >
+                {service}
+            </button>
+            )
+        })}
+      </div>
+    </section>
+  )
 }
 
-export default MyServicesTopBar;
+export default MyServicesTopBar
