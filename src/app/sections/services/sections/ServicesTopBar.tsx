@@ -13,16 +13,19 @@ const MyServicesTopBar = () => {
   ]
 
   return (
-    <section className="bg-pure-white w-full text-center">
+    <section className="bg-pure-white w-full">
       {/* Services intro section */}
-      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto">
-        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] leading-[40px] mb-4">
+      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center px-4">
+        {/* Heading */}
+        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">
           My Services
         </h2>
 
+        {/* Divider */}
         <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
 
-        <p className="font-inter font-[400] text-medium-gray text-[18px] leading-[28px] max-w-[640px]">
+        {/* Description */}
+        <p className="font-inter font-[400] text-medium-gray text-[18px] max-w-[640px]">
           Looking for that unique gift? Something extraordinary? Whether it's for a birthday,
           a retirement, baby shower, friendship or a 'just because'; caricature as a gift will
           always win.
@@ -30,28 +33,28 @@ const MyServicesTopBar = () => {
       </div>
 
       {/* Pills / Button Section */}
-      <div className="flex flex-wrap justify-center gap-4 mt-10">
+      <div className="flex flex-wrap justify-center items-center gap-5 mt-12 px-4">
         {services.map((service) => {
-            const isActive = activeService === service
-            return (
+          const isActive = activeService === service
+          return (
             <button
-                key={service}
-                onClick={() => setActiveService(service)}
-                className={`w-[230px] py-3 rounded-[12px] font-fredoka font-[400] text-[16px] transition-all duration-200
+              key={service}
+              onClick={() => setActiveService(service)}
+              type="button"
+              className={`min-w-[220px] lg:w-[240px] py-3 rounded-[8px] font-fredoka font-[400] text-[16px] transition-all duration-200
                 ${
-                    isActive
+                  isActive
                     ? "bg-carrot-orange text-pure-white shadow-md"
                     : "bg-silver-gray text-dark-charcoal hover:bg-carrot-orange/80 hover:text-pure-white"
                 }`}
-                type="button"
             >
-                {service}
+              {service}
             </button>
-            )
+          )
         })}
       </div>
     </section>
   )
 }
 
-export default MyServicesTopBar
+export default MyServicesTopBar;
