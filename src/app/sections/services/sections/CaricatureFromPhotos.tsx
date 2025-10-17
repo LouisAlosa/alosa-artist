@@ -38,6 +38,102 @@ const CaricatureFromPhotos = () => {
           />
         </div>
       </div>
+
+      {/* Package Cards */}
+      <div className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        {/* Head to shoulders/chest */}
+        <div className="bg-neutral-gray rounded-[8px] p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 className="font-fredoka font-[400] text-[24px] leading-[32px] text-dark-charcoal mb-2">
+              Head to shoulders/chest
+            </h3>
+
+            <p className="font-inter text-[20px] leading-[32px] text-carrot-orange font-[500] mb-1">
+              <span className="text-medium-gray text-[16px] font-[400]">Ksh. 5,000/ USD 50 </span> 
+              Per person with a plain background
+            </p>
+
+            <ul className="list-disc list-inside space-y-3 mt-4">
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Any additional person is <span className="text-carrot-orange">Ksh 4,000/USD 40 each.</span>
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Any additional person is{" "}
+                <span className="text-carrot-orange">Ksh 6,000/USD 60 each.</span>
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Digital delivery via email.
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                High resolution file.
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                You can get a time-lapse of your caricatures, 1-3 minutes time-laps for 
+                <span className="text-carrot-orange"> Ksh. 1,000/USD 10.</span>
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Additional items in the caricatures such as vehicles, pets, detailed background (landscapes, buildings, oceans, etc) have additional charges starting from 
+                <span className="text-carrot-orange"> Ksh. 3,000/ USD 30.</span>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] leading-[24px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
+                       transition-all duration-200 ease-in-out
+                       hover:bg-carrot-orange/90 hover:shadow-lg 
+                       active:scale-[0.98] active:shadow-inner"
+          >
+            Order This Package
+          </button>
+        </div>
+
+        {/* Head to waist */}
+        <div className="bg-neutral-gray rounded-[8px] p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 className="font-fredoka font-[400] text-[24px] leading-[32px] text-dark-charcoal mb-2">
+              Head to waist
+            </h3>
+
+            <p className="font-inter text-[20px] leading-[32px] text-carrot-orange font-[500] mb-1">
+              Ksh. 7,000/ USD 70 
+              <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
+            </p>
+
+            <ul className="list-disc list-inside space-y-3 mt-4">
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Any additional person is 
+                <span className="text-carrot-orange"> Ksh 6,000/USD 60 each.</span>
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Digital delivery via email.
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                High resolution file.
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                You can get a time-lapse of your caricatures, 1-3 minutes time-laps for
+                <span className="text-carrot-orange"> Ksh. 1,000/USD 10.</span>
+              </li>
+              <li className="font-inter text-[18px] leading-[24px] text-medium-gray">
+                Additional items in the caricatures such as vehicles, pets, detailed background (landscapes, buildings, oceans, etc) have additional charges starting from
+                <span className="text-carrot-orange"> Ksh. 3,000/ USD 30.</span>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] leading-[24px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
+                       transition-all duration-200 ease-in-out
+                       hover:bg-carrot-orange/90 hover:shadow-lg 
+                       active:scale-[0.98] active:shadow-inner"
+          >
+            Order This Package
+          </button>
+        </div>
+      </div>
     </section>
   )
 }
