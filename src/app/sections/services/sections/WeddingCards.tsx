@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import WeddingCardsimage from "../../../assets/images/myservices-events/colored-caricature.jpg"
+import WeddingCardsimage from "../../../assets/images/myservices-events/weddingEcards.jpg"
 
 const WeddingCards = () => {
   return (
