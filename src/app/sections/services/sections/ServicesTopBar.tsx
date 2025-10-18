@@ -1,11 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { Dispatch, SetStateAction } from "react";
 
-const MyServicesTopBar = () => {
-  // Active service pill state
-  const [activeService, setActiveService] = useState("Event Caricatures")
+interface MyServicesTopBarProps {
+  activeService: string;
+  setActiveService: Dispatch<SetStateAction<string>>
+}
 
+const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarProps) => {
   const services = [
     "Event Caricatures",
     "Caricatures From Photos",
