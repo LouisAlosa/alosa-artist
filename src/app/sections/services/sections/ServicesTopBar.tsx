@@ -17,7 +17,7 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
   return (
     <section className="bg-pure-white w-full">
       {/* Services intro section */}
-      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center px-4">
+      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center">
         {/* Heading */}
         <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">
           My Services
@@ -35,7 +35,7 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
       </div>
 
       {/* Pills / Button Section */}
-      <div className="flex flex-wrap justify-center items-center gap-5 mt-12 px-4">
+      <div className="flex flex-wrap justify-center items-center gap-5 mt-12">
         {services.map((service) => {
           const isActive = activeService === service
           return (
