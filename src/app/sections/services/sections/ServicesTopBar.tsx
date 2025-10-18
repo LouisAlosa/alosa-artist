@@ -28,8 +28,8 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
 
         {/* Description */}
         <p className="font-inter font-[400] text-medium-gray text-[18px] max-w-[640px]">
-          Looking for that unique gift? Something extraordinary? Whether it's for a birthday,
-          a retirement, baby shower, friendship or a 'just because'; caricature as a gift will
+          Looking for that unique gift? Something extraordinary? Whether it&apos;s for a birthday,
+          a retirement, baby shower, friendship or a &apos;just because&apos; caricature as a gift will
           always win.
         </p>
       </div>
