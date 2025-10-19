@@ -5,6 +5,7 @@ import GalleryTopBar from "./sections/GalleryTopBar";
 import DigitalCaricatures from "./sections/DigitalCaricatures";
 import LiveCaricatures from "./sections/LiveCaricatures";
 import Illustrations from "./sections/Illustrations";
+import GalleryButton from "./sections/GalleryButton";
 
 const Gallery = () => {
     const [activeGallery, setActiveGallery] = useState("Digital Caricatures")
@@ -18,6 +19,7 @@ const Gallery = () => {
               { activeGallery === "Illustrations" && <Illustrations /> }
               { activeGallery === "Live Caricatures" && <LiveCaricatures /> }
             </div>
+            <GalleryButton />
         </section>
     )
 }
