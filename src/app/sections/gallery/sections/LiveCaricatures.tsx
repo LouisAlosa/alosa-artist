@@ -21,7 +21,7 @@ const LiveCaricatures = () => {
             <div className="relative w-full aspect-[4/3] flex-shrink-0">
               <Image
                 src={leftTop}
-                alt="Digital caricature left top"
+                alt="Live caricature left top"
                 fill
                 className="object-cover rounded-[16px]"
                 priority
@@ -33,7 +33,7 @@ const LiveCaricatures = () => {
               <div className="relative flex-1 h-full min-h-[150px]">
                 <Image
                   src={leftBottom1}
-                  alt="Digital caricature left bottom 1"
+                  alt="Live caricature left bottom 1"
                   fill
                   className="object-cover rounded-[16px]"
                 />
@@ -41,7 +41,7 @@ const LiveCaricatures = () => {
               <div className="relative flex-1 h-full min-h-[150px]">
                 <Image
                   src={leftBottom2}
-                  alt="Digital caricature left bottom 2"
+                  alt="Live caricature left bottom 2"
                   fill
                   className="object-cover rounded-[16px]"
                 />
@@ -53,7 +53,7 @@ const LiveCaricatures = () => {
           <div className="relative w-full h-full">
             <Image
               src={middle}
-              alt="Digital caricature center"
+              alt="Live caricature center"
               fill
               className="object-cover rounded-[16px]"
               priority
@@ -65,7 +65,7 @@ const LiveCaricatures = () => {
             <div className="relative w-full aspect-[4/3] flex-shrink-0">
               <Image
                 src={rightTop}
-                alt="Digital caricature right top"
+                alt="Live caricature right top"
                 fill
                 className="object-cover rounded-[16px]"
               />
@@ -73,7 +73,7 @@ const LiveCaricatures = () => {
             <div className="relative w-full aspect-[4/3] flex-shrink-0">
               <Image
                 src={rightBottom}
-                alt="Digital caricature right bottom"
+                alt="Live caricature right bottom"
                 fill
                 className="object-cover rounded-[16px]"
               />

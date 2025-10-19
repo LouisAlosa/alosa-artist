@@ -4,6 +4,7 @@ import { useState } from "react";
 import GalleryTopBar from "./sections/GalleryTopBar";
 import DigitalCaricatures from "./sections/DigitalCaricatures";
 import LiveCaricatures from "./sections/LiveCaricatures";
+import Illustrations from "./sections/Illustrations";
 
 const Gallery = () => {
     const [activeGallery, setActiveGallery] = useState("Digital Caricatures")
@@ -13,7 +14,8 @@ const Gallery = () => {
 
             {/* Gallery section toggled */}
             {/* <DigitalCaricatures /> */}
-            <LiveCaricatures />
+            {/* <LiveCaricatures /> */}
+            <Illustrations />
         </section>
     )
 }
