@@ -12,10 +12,12 @@ const Gallery = () => {
         <section className="bg-pure-white px-[5%] py-16">
             <GalleryTopBar activeGallery={activeGallery} setActiveGallery={setActiveGallery} />
 
-            {/* Gallery section toggled */}
-            {/* <DigitalCaricatures /> */}
-            {/* <LiveCaricatures /> */}
-            <Illustrations />
+            {/* Conditionally render based on the selected Gallery section */}
+            <div className="mt-2">
+              { activeGallery === "Digital Caricatures" && <DigitalCaricatures /> }
+              { activeGallery === "Illustrations" && <Illustrations /> }
+              { activeGallery === "Live Caricatures" && <LiveCaricatures /> }
+            </div>
         </section>
     )
 }
