@@ -122,17 +122,22 @@ const DigitalCaricatures = () => {
 
         {/* POPUP VIEW */}
         {activeIndex !== null && (
-          <div className="absolute inset-0 z-20 bg-black/60 backdrop-blur-sm flex justify-center items-center rounded-[16px] md:rounded-[20px] overflow-hidden">
-            {/* Container with limited size */}
-            <div className="relative w-[90%] md:w-[70%] max-w-[800px] h-[90%] flex items-center justify-center">
+          <div
+            className="absolute inset-0 z-20 bg-black/60 backdrop-blur-sm flex justify-center items-center rounded-[16px] md:rounded-[20px] overflow-hidden"
+            style={{
+              minHeight: "80vh", // ensures taller popup on mobile
+            }}
+          >
+            {/* Container with responsive sizing */}
+            <div className="relative w-[95%] md:w-[70%] max-w-[800px] h-auto max-h-[90vh] flex items-center justify-center">
               {/* Image stays confined within the blurred background */}
               <div className="relative w-full h-full flex items-center justify-center p-4">
                 <Image
                   src={images[activeIndex].src}
                   alt={images[activeIndex].alt}
-                  fill
                   className="object-contain rounded-[16px]"
-                  sizes="(max-width: 768px) 90vw, 70vw"
+                  width={800}
+                  height={600}
                   priority
                 />
               </div>
