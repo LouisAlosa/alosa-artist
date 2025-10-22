@@ -67,7 +67,7 @@ const LiveCaricatures = () => {
 
               <button
                 onClick={closePopup}
-                className="absolute top-2 right-2 bg-black/60 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/80"
+                className="absolute top-4 right-4 bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-black/90 z-10"
                 aria-label="Close preview"
               >
                 ×
@@ -76,19 +76,19 @@ const LiveCaricatures = () => {
               {activeIndex > 0 && (
                 <button
                   onClick={(e) => { e.stopPropagation(); showPrevious() }}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/70"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-black/90 z-10"
                   aria-label="Previous"
                 >
-                  ❮
+                  ‹
                 </button>
               )}
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={(e) => { e.stopPropagation(); showNext() }}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/70"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-black/90 z-10"
                   aria-label="Next"
                 >
-                  ❯
+                  ›
                 </button>
               )}
             </div>
@@ -180,24 +180,20 @@ const LiveCaricatures = () => {
         )}
 
         {!isMobile && activeIndex !== null && (
-          <div
-            className="absolute inset-0 z-20 bg-black/60 backdrop-blur-sm flex justify-center items-center rounded-[16px] md:rounded-[20px] overflow-hidden"
-          >
-            <div className="relative w-[90%] md:w-[70%] max-w-[900px] aspect-[4/3] flex items-center justify-center">
-              <div className="relative w-full h-full flex items-center justify-center p-4">
-                <Image
-                  src={images[activeIndex].src}
-                  alt={images[activeIndex].alt}
-                  fill
-                  className="object-contain rounded-[12px]"
-                  sizes="(max-width: 768px) 90vw, 70vw"
-                  priority
-                />
-              </div>
+          <div className="absolute inset-0 z-20 bg-black/90 flex h-full justify-center items-center rounded-[16px] overflow-hidden">
+            <div className="relative w-full h-full max-w-[95%] max-h-[100%] flex items-center justify-center p-8">
+              <Image
+                src={images[activeIndex].src}
+                alt={images[activeIndex].alt}
+                width={1000}
+                
+                className="object-contain w-auto h-full max-w-full max-h-full rounded-lg"
+                priority
+              />
 
               <button
                 onClick={closePopup}
-                className="absolute top-3 right-3 bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/70"
+                className="absolute top-4 right-4 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
                 aria-label="Close preview"
               >
                 ×
@@ -206,22 +202,26 @@ const LiveCaricatures = () => {
               {activeIndex > 0 && (
                 <button
                   onClick={showPrevious}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/70"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
                   aria-label="Previous"
                 >
-                  ❮
+                  ‹
                 </button>
               )}
 
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={showNext}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg hover:bg-black/70"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
                   aria-label="Next"
                 >
-                  ❯
+                  ›
                 </button>
               )}
+
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/80 rounded-full px-4 py-2 text-lg font-medium">
+                {activeIndex + 1} / {images.length}
+              </div>
             </div>
           </div>
         )}
