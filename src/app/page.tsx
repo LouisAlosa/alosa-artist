@@ -3,6 +3,7 @@ import AboutAlosa from "./sections/about/About";
 import Gallery from "./sections/gallery/Gallery";
 import Hero from "./sections/hero/Hero";
 import MyServices from "./sections/services/Services";
+import Testimonials from "./sections/testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutAlosa />
       <MyServices />
       <Gallery />
+      <Testimonials />
     </>
   )
 }
