@@ -5,7 +5,7 @@ import TestimonialsTopBar from "./sections/TestimonialsTopar";
 
 const Testimonials = () => {
   return (
-    <section className="bg-pure-white px-[5%] py-16">
+    <section className="bg-pure-white py-16">
       <TestimonialsTopBar />
       <TestimonialsBody />
     </section>
