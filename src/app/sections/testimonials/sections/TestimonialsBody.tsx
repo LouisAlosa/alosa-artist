@@ -10,22 +10,25 @@ const TestimonialsBody = () => {
   const testimonials = [
     {
       id: 1,
-      text: "I love it!!!!! 🤣🤣🤣🤣 Definitely my new profile pic!!!",
+      text: "I love it!!!!! 🤣🤣🤣🤣 ",
+      textCarrot: "Definitely my new profile pic!!!",
       name: "Job Kim",
       type: "Custom Caricature",
       image: person1,
     },
     {
       id: 2,
-      text: "This artist captured my personality perfectly. I can't stop showing everyone!",
-      name: "Sarah Doe",
+      text: "Such a special gift 🥹🥹. ",
+      textCarrot: "I'm so grateful you exist ❤️.",
+      name: "Serena Ndekeremo",
       type: "Live Caricature",
       image: person2,
     },
     {
       id: 3,
-      text: "Such a fun experience! Fast, professional, and the result blew my mind!",
-      name: "Michael Lee",
+      text: "Love it , ",
+      textCarrot: "thanks 🔥",
+      name: "Angela Okutoyi",
       type: "Digital Caricature",
       image: person3,
     },
@@ -48,13 +51,14 @@ const TestimonialsBody = () => {
     return newIndex
   }
 
-  const { text, name, type, image } = testimonials[current]
+  const { text, name, type, image, textCarrot } = testimonials[current]
 
   return (
     <section className="lg:px-[5%] w-full flex flex-col items-center justify-center text-center">
       {/* Testimonial text */}
       <p className="text-medium-gray text-center px-[5%] font-inter font-[400] text-[18px] py-6">
         {text}
+        <span className="text-carrot-orange">{textCarrot}</span>
       </p>
 
       {/* Images container */}
