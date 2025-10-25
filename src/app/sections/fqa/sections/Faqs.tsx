@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, ChevronUp } from "lucide-react"
 
 const Faqs = () => {
   const alosaFaqs = [
@@ -20,8 +19,7 @@ const Faqs = () => {
     {
       id: 3,
       faqTitle: "Do you have a studio?",
-      faqBody:
-        "I do not have a studio, I work from home.",
+      faqBody: "I do not have a studio, I work from home.",
     },
   ]
 
@@ -46,15 +44,43 @@ const Faqs = () => {
               <h3 className="font-fredoka font-[400] text-dark-charcoal text-[18px]">
                 {faq.faqTitle}
               </h3>
+
+              {/* Inline SVG icon (up/down toggle) */}
               {openFaq === faq.id ? (
-                <ChevronUp className="w-5 h-5 text-gray-600" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-gray-600 transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
               ) : (
-                <ChevronDown className="w-5 h-5 text-gray-600" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-gray-600 transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
               )}
             </button>
 
             {openFaq === faq.id && (
-              <p className="font-inter font-[400] text-medium-gray text-[16px] lg-[17px] py-4">
+              <p className="font-inter font-[400] text-medium-gray text-[16px] lg:text-[17px] py-4">
                 {faq.faqBody}
               </p>
             )}
@@ -65,4 +91,4 @@ const Faqs = () => {
   )
 }
 
-export default Faqs
+export default Faqs;
