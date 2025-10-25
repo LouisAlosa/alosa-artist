@@ -43,7 +43,7 @@ const Faqs = () => {
               onClick={() => toggleFaq(faq.id)}
               className="w-full flex justify-between items-center text-left"
             >
-              <h3 className="font-fredoka font-[400] text-[22px] md:text-[24px] mb-3">
+              <h3 className="font-fredoka font-[400] text-dark-charcoal text-[18px]">
                 {faq.faqTitle}
               </h3>
               {openFaq === faq.id ? (
@@ -54,7 +54,7 @@ const Faqs = () => {
             </button>
 
             {openFaq === faq.id && (
-              <p className="text-[16px] font-inter md:text-[17px] lg:text-[18px] font-[400]">
+              <p className="font-inter font-[400] text-medium-gray text-[16px] lg-[17px] py-4">
                 {faq.faqBody}
               </p>
             )}
