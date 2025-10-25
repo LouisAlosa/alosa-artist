@@ -5,6 +5,7 @@ import Gallery from "./sections/gallery/Gallery";
 import Hero from "./sections/hero/Hero";
 import MyServices from "./sections/services/Services";
 import Testimonials from "./sections/testimonials/Testimonials";
+import Faq from "./sections/fqa/Faq";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <MyServices />
       <Gallery />
       <Testimonials />
+      <Faq />
       <Footer />
     </>
   )
