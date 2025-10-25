@@ -7,7 +7,7 @@ import logo from "../../assets/images/alosa-logo.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-carrot-orange text-pure-white px-[5%] py-10 font-inter">
+    <footer className="bg-sunset-orange text-pure-white px-[5%] py-10 font-inter">
       {/* Top Grid Section */}
       <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-16 mb-10">
         {/* Logo and description */}
