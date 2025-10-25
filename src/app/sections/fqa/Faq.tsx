@@ -1,11 +1,13 @@
 "use client"
 
+import Faqs from "./sections/Faqs";
 import FaqTopBar from "./sections/FaqTopBar";
 
 const Faq = () => {
     return (
-        <section className="">
+        <section className="px-[5%] w-full">
             <FaqTopBar />
+            <Faqs />
         </section>
     )
 }
