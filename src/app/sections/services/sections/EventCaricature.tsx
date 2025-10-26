@@ -3,7 +3,25 @@
 import Image from "next/image"
 import eventcaricatureimage from "../../../assets/images/myservices-events/colored-caricature.jpg"
 
-const EventCaricature = () => {
+interface EventCaricatureProps {
+  onOrderPackage?: (packageType: string, serviceType: string) => void
+}
+
+const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
+  
+  const handleOrderPackage = (packageType: string) => {
+    // Scroll to contact form
+    const contactForm = document.getElementById("contact-form")
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth" })
+    }
+
+    // Call the parent handler to set the preselected option
+    if (onOrderPackage) {
+      onOrderPackage(packageType, "Book live event caricatures")
+    }
+  }
+
   return (
     <section className="bg-pure-white w-full flex flex-col items-center py-10 md:py-16 md:px-10">
       {/* Main wrapper for text + image */}
@@ -74,6 +92,7 @@ const EventCaricature = () => {
 
           <button
             type="button"
+            onClick={() => handleOrderPackage("Black and White Caricatures")}
             className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] leading-[24px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
                        transition-all duration-200 ease-in-out
                        hover:bg-carrot-orange/90 hover:shadow-lg 
@@ -111,6 +130,7 @@ const EventCaricature = () => {
 
           <button
             type="button"
+            onClick={() => handleOrderPackage("Coloured Caricatures")}
             className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] leading-[24px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
                        transition-all duration-200 ease-in-out
                        hover:bg-carrot-orange/90 hover:shadow-lg 
@@ -124,4 +144,4 @@ const EventCaricature = () => {
   )
 }
 
-export default EventCaricature
+export default EventCaricature;
