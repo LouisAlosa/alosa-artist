@@ -1,9 +1,11 @@
 "use client"
 
+import ContactMeLeft from "./sections/ContactMeTopBarLeft";
+
 const ContactMe = () => {
     return (
-        <section className="">
-
+        <section className="px-[5%]">
+            <ContactMeLeft />
         </section>
     )
 }
