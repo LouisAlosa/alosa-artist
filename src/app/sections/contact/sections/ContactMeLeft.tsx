@@ -7,7 +7,7 @@ const ContactMeLeft = () => {
       <div className="flex flex-col lg:items-start justify-center max-w-[800px] mx-auto">
         {/* Heading */}
         <h2 className="font-fredoka font-[400] text-dark-charcoal text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-3">
-          Let's Get Sketching!
+          Let&apos;s Get Sketching!
         </h2>
 
         {/* Divider */}
@@ -16,7 +16,7 @@ const ContactMeLeft = () => {
         {/* Description */}
         <p className="font-inter font-[400] text-medium-gray text-[16px] sm:text-[18px] leading-relaxed mb-8 max-w-[640px]">
           Ready to commission a caricature or book me for your event? Fill out
-          the form and I'll get back to you within 24 hours.
+          the form and I&apos;ll get back to you within 24 hours.
         </p>
 
         {/* Contact Details Section */}
