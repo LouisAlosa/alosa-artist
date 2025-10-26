@@ -1,10 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-const ContactMeRight = () => {
+interface ContactMeRightProps {
+  preselectedOption?: string
+}
+
+const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
   const [selectedOption, setSelectedOption] = useState("")
   const [isOpen, setIsOpen] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
   const options = [
     "Order a caricature from photos",
@@ -20,10 +29,54 @@ const ContactMeRight = () => {
     "Leave a testimonial": "Submit testimonial",
   }
 
+  // Effect to handle preselected option
+  useEffect(() => {
+    if (preselectedOption) {
+      setSelectedOption(preselectedOption)
+    }
+  }, [preselectedOption])
+
   const toggleDropdown = () => setIsOpen(!isOpen)
+  
   const selectOption = (option: string) => {
     setSelectedOption(option)
     setIsOpen(false)
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    // Basic validation
+    if (!selectedOption) {
+      alert("Please select an option from the dropdown")
+      return
+    }
+
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill in all required fields")
+      return
+    }
+
+    // Form submission logic would go here
+    console.log("Form submitted:", {
+      service: selectedOption,
+      ...formData
+    })
+
+    // Success message
+    alert(`Thank you for your ${selectedOption.toLowerCase()}! We'll get back to you within 24 hours.`)
+    
+    // Optional: Reset form
+    setSelectedOption("")
+    setFormData({ name: "", email: "", message: "" })
   }
 
   // Determine the button label dynamically
@@ -32,8 +85,8 @@ const ContactMeRight = () => {
     : "Order a caricature"
 
   return (
-    <section className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
-      <form className="flex flex-col gap-5">
+    <section id="contact-form" className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         {/* Name */}
         <div>
           <label
@@ -45,8 +98,12 @@ const ContactMeRight = () => {
           <input
             type="text"
             id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
             placeholder="Enter your full name"
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
+            required
           />
         </div>
 
@@ -61,8 +118,12 @@ const ContactMeRight = () => {
           <input
             type="email"
             id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
             placeholder="Enter your email address"
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
+            required
           />
         </div>
 
@@ -75,9 +136,11 @@ const ContactMeRight = () => {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-medium-gray text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
+            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
           >
-            <span>{selectedOption || "I would like to..."}</span>
+            <span className={selectedOption ? "text-dark-charcoal" : "text-gray-400"}>
+              {selectedOption || "I would like to..."}
+            </span>
 
             {/* Caret Icon */}
             <svg
@@ -104,7 +167,11 @@ const ContactMeRight = () => {
                 <li
                   key={idx}
                   onClick={() => selectOption(option)}
-                  className="px-4 py-3 hover:bg-[#FFF4EC] cursor-pointer text-medium-gray font-inter transition-colors border-b border-gray-100 last:border-b-0"
+                  className={`px-4 py-3 hover:bg-[#FFF4EC] cursor-pointer font-inter transition-colors border-b border-gray-100 last:border-b-0 ${
+                    selectedOption === option 
+                      ? "bg-[#FFF4EC] text-carrot-orange font-medium" 
+                      : "text-medium-gray"
+                  }`}
                 >
                   {option}
                 </li>
@@ -123,8 +190,12 @@ const ContactMeRight = () => {
           </label>
           <textarea
             id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
             placeholder="Tell me about your caricature idea or event details..."
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all min-h-[120px] resize-vertical"
+            required
           />
         </div>
 
