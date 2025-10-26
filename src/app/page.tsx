@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react";
-
 import Navbar from "./components/navbar/Navbar";
 import AboutAlosa from "./sections/about/About";
 import Footer from "./components/footer/Footer";
@@ -26,7 +25,7 @@ export default function Home() {
       <AboutAlosa />
       <MyServices onServiceOrder={handleServiceOrder} />
       <Gallery />
-      <Testimonials />
+      <Testimonials onServiceOrder={handleServiceOrder} />
       <ContactMe preselectedOption={preselectedService} />
       <Faq />
       <Footer />
