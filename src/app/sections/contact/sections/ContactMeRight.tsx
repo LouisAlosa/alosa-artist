@@ -20,7 +20,7 @@ const ContactMeRight = () => {
   }
 
   return (
-    <section className="bg-off-white px-5 py-8 rounded-2xl shadow-sm">
+    <section className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
       <form className="flex flex-col gap-5">
         {/* Name */}
         <div>
@@ -34,7 +34,7 @@ const ContactMeRight = () => {
             type="text"
             id="name"
             placeholder="Enter your full name"
-            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FA893A]"
+            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
             />
         </div>
 
@@ -50,7 +50,7 @@ const ContactMeRight = () => {
             type="email"
             id="email"
             placeholder="Enter your email address"
-            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FA893A]"
+            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
           />
         </div>
 
@@ -63,11 +63,11 @@ const ContactMeRight = () => {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-medium-gray text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-[#FA893A]"
+            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-medium-gray text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
           >
             <span>{selectedOption || "I would like to..."}</span>
 
-            {/* Caret Icon (SVG, rotates when open) */}
+            {/* Caret Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className={`w-5 h-5 transition-transform ${
@@ -87,12 +87,12 @@ const ContactMeRight = () => {
           </button>
 
           {isOpen && (
-            <ul className="absolute mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg z-10">
+            <ul className="absolute mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg z-10 max-h-60 overflow-y-auto">
               {options.map((option, idx) => (
                 <li
                   key={idx}
                   onClick={() => selectOption(option)}
-                  className="px-4 py-3 hover:bg-[#FFF4EC] cursor-pointer text-medium-gray font-inter"
+                  className="px-4 py-3 hover:bg-[#FFF4EC] cursor-pointer text-medium-gray font-inter transition-colors border-b border-gray-100 last:border-b-0"
                 >
                   {option}
                 </li>
@@ -112,14 +112,14 @@ const ContactMeRight = () => {
           <textarea
             id="message"
             placeholder="Tell me about your caricature idea or event details..."
-            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FA893A] min-h-[120px]"
+            className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all min-h-[120px] resize-vertical"
           />
         </div>
 
         {/* Submit button */}
         <button
           type="submit"
-          className="bg-[#FA893A] text-white font-fredoka font-[400] text-[17px] py-3 rounded-xl hover:bg-[#f77d24] transition-all"
+          className="bg-carrot-orange text-white font-fredoka font-[400] text-[17px] py-3 rounded-xl hover:bg-orange-600 transition-all shadow-md"
         >
           Order a caricature
         </button>

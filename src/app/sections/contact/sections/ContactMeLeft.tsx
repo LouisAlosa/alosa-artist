@@ -2,11 +2,11 @@
 
 const ContactMeLeft = () => {
   return (
-    <section className="bg-pure-white w-full mb-6 text-center lg:text-left">
+    <section className="bg-pure-white w-full mb-6 text-left">
       {/* Contact me intro section */}
-      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto px-4">
+      <div className="flex flex-col lg:items-start justify-center max-w-[800px] mx-auto">
         {/* Heading */}
-        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[28px] sm:text-[32px] md:text-[36px] mb-3">
+        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-3">
           Let's Get Sketching!
         </h2>
 
@@ -21,7 +21,7 @@ const ContactMeLeft = () => {
 
         {/* Contact Details Section */}
         <div className="w-full max-w-[360px] text-left">
-          <h3 className="font-inter font-[600] text-dark-charcoal text-[18px] mb-4">
+          <h3 className="font-inter font-[600] text-dark-charcoal text-[18px] lg:text-[20px] mb-4">
             Contact Details
           </h3>
 
@@ -43,7 +43,7 @@ const ContactMeLeft = () => {
                   />
                 </svg>
               </div>
-              <span className="font-inter text-medium-gray text-[15px]">
+              <span className="font-inter text-medium-gray text-[15px] lg:text-[16px]">
                 alosa.louis@gmail.com
               </span>
             </li>
@@ -65,7 +65,7 @@ const ContactMeLeft = () => {
                   />
                 </svg>
               </div>
-              <span className="font-inter text-medium-gray text-[15px]">
+              <span className="font-inter text-medium-gray text-[15px] lg:text-[16px]">
                 +254721787390
               </span>
             </li>
@@ -93,7 +93,7 @@ const ContactMeLeft = () => {
                   />
                 </svg>
               </div>
-              <span className="font-inter text-medium-gray text-[15px]">
+              <span className="font-inter text-medium-gray text-[15px] lg:text-[16px]">
                 Nairobi City, Kenya
               </span>
             </li>
