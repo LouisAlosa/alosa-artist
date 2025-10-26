@@ -13,11 +13,23 @@ const ContactMeRight = () => {
     "Leave a testimonial",
   ]
 
+  const buttonTextMap: Record<string, string> = {
+    "Order a caricature from photos": "Order a caricature",
+    "Book live event caricatures": "Book a live caricature event",
+    "Order wedding/ dowry ecards": "Order a wedding or dowry ecard",
+    "Leave a testimonial": "Submit testimonial",
+  }
+
   const toggleDropdown = () => setIsOpen(!isOpen)
   const selectOption = (option: string) => {
     setSelectedOption(option)
     setIsOpen(false)
   }
+
+  // Determine the button label dynamically
+  const buttonLabel = selectedOption
+    ? buttonTextMap[selectedOption]
+    : "Order a caricature"
 
   return (
     <section className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
@@ -35,7 +47,7 @@ const ContactMeRight = () => {
             id="name"
             placeholder="Enter your full name"
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
-            />
+          />
         </div>
 
         {/* Email */}
@@ -121,7 +133,7 @@ const ContactMeRight = () => {
           type="submit"
           className="bg-carrot-orange text-white font-fredoka font-[400] text-[17px] py-3 rounded-xl hover:bg-orange-600 transition-all shadow-md"
         >
-          Order a caricature
+          {buttonLabel}
         </button>
       </form>
     </section>
