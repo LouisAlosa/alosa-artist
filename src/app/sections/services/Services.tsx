@@ -27,8 +27,8 @@ const MyServices = ({ onServiceOrder }: MyServicesProps) => {
 
       {/* Conditionally render based on selected service */}
       <div className="mt-12">
-        {/* {activeService === "Event Caricatures" && <EventCaricature onOrderPackage={handleOrderPackage} />}
-        {activeService === "Caricatures From Photos" && <CaricatureFromPhotos onOrderPackage={handleOrderPackage} />} */}
+        {activeService === "Event Caricatures" && <EventCaricature onOrderPackage={handleOrderPackage} />}
+        {activeService === "Caricatures From Photos" && <CaricatureFromPhotos onOrderPackage={handleOrderPackage} />}
         {activeService === "Wedding eCards" && <WeddingCards onOrderPackage={handleOrderPackage} />}
       </div>
     </section>

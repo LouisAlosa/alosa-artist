@@ -3,7 +3,25 @@
 import Image from "next/image"
 import CaricatureFromPhotosimage from "../../../assets/images/myservices-events/CaricatureFromPhotos.jpg"
 
-const CaricatureFromPhotos = () => {
+interface CaricatureFromPhotosProps {
+  onOrderPackage?: (packageType: string, serviceType: string) => void
+}
+
+const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => {
+  
+  const handleOrderPackage = (packageType: string) => {
+    // Scroll to contact form
+    const contactForm = document.getElementById("contact-form")
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth" })
+    }
+
+    // Call the parent handler to set the preselected option
+    if (onOrderPackage) {
+      onOrderPackage(packageType, "Order a caricature from photos")
+    }
+  }
+
   return (
     <section className="bg-pure-white w-full flex flex-col items-center py-10 md:py-16 md:px-10">
       {/* Main wrapper for text + image */}
@@ -80,6 +98,7 @@ const CaricatureFromPhotos = () => {
 
           <button
             type="button"
+            onClick={() => handleOrderPackage("Head to shoulders/chest")}
             className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
                        transition-all duration-200 ease-in-out
                        hover:bg-carrot-orange/90 hover:shadow-lg 
@@ -130,6 +149,7 @@ const CaricatureFromPhotos = () => {
 
             <button
                 type="button"
+                onClick={() => handleOrderPackage("Head to waist")}
                 className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
                         transition-all duration-200 ease-in-out
                         hover:bg-carrot-orange/90 hover:shadow-lg 
@@ -176,6 +196,7 @@ const CaricatureFromPhotos = () => {
 
           <button
             type="button"
+            onClick={() => handleOrderPackage("Head to feet/full body")}
             className="w-full bg-carrot-orange text-pure-white font-inter font-[400] text-[16px] rounded-[8px] px-4 py-3 mt-6 shadow-md 
                        transition-all duration-200 ease-in-out
                        hover:bg-carrot-orange/90 hover:shadow-lg 
