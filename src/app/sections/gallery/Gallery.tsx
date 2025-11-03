@@ -6,9 +6,20 @@ import DigitalCaricatures from "./sections/DigitalCaricatures";
 import LiveCaricatures from "./sections/LiveCaricatures";
 import Illustrations from "./sections/Illustrations";
 import GalleryButton from "./sections/GalleryButton";
+import FullGallery from "../fullgallery/sections/FullGallery";
 
 const Gallery = () => {
-    const [activeGallery, setActiveGallery] = useState("Digital Caricatures")
+    const [activeGallery, setActiveGallery] = useState("Digital Caricatures");
+    const [isFullGalleryOpen, setIsFullGalleryOpen] = useState(false);
+
+    const openFullGallery = () => {
+        setIsFullGalleryOpen(true);
+    };
+
+    const closeFullGallery = () => {
+        setIsFullGalleryOpen(false);
+    };
+
     return (
         <section className="bg-pure-white px-[5%] py-16">
             <GalleryTopBar activeGallery={activeGallery} setActiveGallery={setActiveGallery} />
@@ -19,7 +30,14 @@ const Gallery = () => {
               { activeGallery === "Illustrations" && <Illustrations /> }
               { activeGallery === "Live Caricatures" && <LiveCaricatures /> }
             </div>
-            <GalleryButton />
+            
+            <GalleryButton onClick={openFullGallery} />
+            
+            {/* Full Gallery Modal */}
+            <FullGallery 
+                isOpen={isFullGalleryOpen} 
+                onClose={closeFullGallery} 
+            />
         </section>
     )
 }
