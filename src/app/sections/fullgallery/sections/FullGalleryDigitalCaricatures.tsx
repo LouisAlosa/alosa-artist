@@ -34,12 +34,46 @@ import FifthCthird from "../../../assets/images/gallery/digitalcaricatures/digit
 const FullGalleryDigitalCaricatures = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
+  // Combine all images for mobile view
+  const allImages = [
+    first, second, third, fourth,
+    SecondCfirst, SecondCsecond, SecondCthird, SecondCfourth,
+    thirdCfirst, thirdCSecond, thirdCthird, thirdCfourth,
+    FourthCfirst, FourthCSecond, FourthCthird,
+    FifthCfirst, FifthCSecond, FifthCthird
+  ]
+
   return (
     <section className="w-full py-6 bg-white">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Digital Caricatures</h2>
+      {/* Header */}
+      <div className="px-4 mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">Digital Caricatures</h2>
+        <p className="text-gray-600 mt-2 text-sm">Swipe to explore all caricatures</p>
+      </div>
 
-      <div className="grid grid-cols-5 gap-4 md:gap-6">
+      {/* Mobile View - Single Column Masonry Layout */}
+      <div className="block lg:hidden">
+        <div className="columns-2 gap-3 px-4 space-y-3">
+          {allImages.map((src, index) => (
+            <div 
+              key={index} 
+              className="relative break-inside-avoid mb-3 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              <Image 
+                src={src} 
+                alt={`Digital caricature ${index + 1}`}
+                width={300}
+                height={400}
+                className="w-full h-auto object-cover"
+                placeholder="blur"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
+      {/* Desktop View - Original 5 Column Layout */}
+      <div className="hidden lg:grid grid-cols-5 gap-4 md:gap-6 px-4">
         {/* Column 1 (4 stacked) */}
         <div className="flex flex-col gap-4">
           {[first, second, third, fourth].map((src, i) => (
@@ -104,7 +138,13 @@ const FullGalleryDigitalCaricatures = () => {
             </div>
           ))}
         </div>
+      </div>
 
+      {/* Mobile Footer Info */}
+      <div className="block lg:hidden px-4 mt-8 text-center">
+        <p className="text-gray-500 text-sm">
+          {allImages.length} caricatures • Scroll to see more
+        </p>
       </div>
     </section>
   )
