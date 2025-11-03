@@ -2,6 +2,8 @@
 
 import { useEffect } from "react"
 import FullGalleryDigitalCaricatures from "./FullGalleryDigitalCaricatures"
+import FullGalleryIllustrations from "./FullGalleryIllustrations";
+import FullGalleryLiveCaricatures from "./FullGalleryLiveCaricatures";
 
 interface FullGalleryProps {
   isOpen: boolean;
@@ -37,6 +39,8 @@ function FullGallery({ isOpen, onClose }: FullGalleryProps) {
         <div className="px-[5%] pt-16 pb-32 mx-auto">
           
           <FullGalleryDigitalCaricatures />
+          <FullGalleryIllustrations />
+          <FullGalleryLiveCaricatures />
 
           {/* Back to Home */}
           <div className="flex justify-center mt-20">
