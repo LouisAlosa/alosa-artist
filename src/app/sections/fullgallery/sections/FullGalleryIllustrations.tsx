@@ -3,24 +3,17 @@
 import Image from "next/image"
 
 // Import yours later — placeholder structure
-import ill1 from "../../../assets/images/gallery/illustrations/ill1.jpg"
-import ill2 from "../../../assets/images/gallery/illustrations/ill2.jpg"
-import ill3 from "../../../assets/images/gallery/illustrations/ill3.jpg"
-import ill4 from "../../../assets/images/gallery/illustrations/ill4.jpg"
-import ill5 from "../../../assets/images/gallery/illustrations/ill5.jpg"
-import ill6 from "../../../assets/images/gallery/illustrations/ill6.jpg"
-import ill7 from "../../../assets/images/gallery/illustrations/ill7.jpg"
-import ill8 from "../../../assets/images/gallery/illustrations/ill8.jpg"
+import ill1 from "../../../assets/images/gallery/fullgallery/illustrations/illustration1.jpg"
+import ill2 from "../../../assets/images/gallery/fullgallery/illustrations/illustration2.jpg"
+import ill3 from "../../../assets/images/gallery/fullgallery/illustrations/illustration3.jpg"
+import ill4 from "../../../assets/images/gallery/fullgallery/illustrations/illustration4.jpg"
+
 
 const illustrationImages = [
   { id: 1, src: ill1, alt: "Illustration sample 1" },
   { id: 2, src: ill2, alt: "Illustration sample 2" },
   { id: 3, src: ill3, alt: "Illustration sample 3" },
   { id: 4, src: ill4, alt: "Illustration sample 4" },
-  { id: 5, src: ill5, alt: "Illustration sample 5" },
-  { id: 6, src: ill6, alt: "Illustration sample 6" },
-  { id: 7, src: ill7, alt: "Illustration sample 7" },
-  { id: 8, src: ill8, alt: "Illustration sample 8" },
 ]
 
 const FullGalleryIllustrations = () => {
