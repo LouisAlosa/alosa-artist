@@ -2,15 +2,19 @@
 
 import Image from "next/image"
 
-// Import yours later — using placeholders for structure
-import live1 from "../../../assets/images/gallery/live/live1.jpg"
-import live2 from "../../../assets/images/gallery/live/live2.jpg"
-import live3 from "../../../assets/images/gallery/live/live3.jpg"
-import live4 from "../../../assets/images/gallery/live/live4.jpg"
-import live5 from "../../../assets/images/gallery/live/live5.jpg"
-import live6 from "../../../assets/images/gallery/live/live6.jpg"
-import live7 from "../../../assets/images/gallery/live/live7.jpg"
-import live8 from "../../../assets/images/gallery/live/live8.jpg"
+// Import for my images
+import live1 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures1.jpg"
+import live2 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures2.jpg"
+import live3 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures3.jpg"
+import live4 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures4.jpg"
+import live5 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures5.jpg"
+import live6 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures6.jpg"
+import live7 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures7.jpg"
+import live8 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures8.jpg"
+import live9 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures9.jpg"
+import live10 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures10.jpg"
+import live11 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures11.jpg"
+import live12 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures12.jpg"
 
 const liveImages = [
   { id: 1, src: live1, alt: "Live caricature drawing" },
@@ -21,6 +25,10 @@ const liveImages = [
   { id: 6, src: live6, alt: "Event caricature booth" },
   { id: 7, src: live7, alt: "Corporate caricature event" },
   { id: 8, src: live8, alt: "Wedding caricature live" },
+  { id: 9, src: live9, alt: "Guest caricature" },
+  { id: 10, src: live10, alt: "Event caricature booth" },
+  { id: 11, src: live11, alt: "Corporate caricature event" },
+  { id: 12, src: live12, alt: "Wedding caricature live" },
 ]
 
  const FullGalleryLiveCaricatures = () => {
