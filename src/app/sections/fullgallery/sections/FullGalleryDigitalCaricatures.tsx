@@ -16,15 +16,14 @@ import SecondCthird from "../../../assets/images/gallery/fullgallery/digitalCari
 import SecondCfourth from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnBottom1.jpg"
 
 // third column 4 images
-import thirdCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import thirdCSecond from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import thirdCthird from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
-import thirdCfourth from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-middle.jpg"
+import thirdCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn1.jpg"
+import thirdCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn2.jpg"
+import thirdCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn3.jpg"
 
 // fourth column 3 images
-import FourthCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import FourthCSecond from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import FourthCthird from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
+import FourthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftTop1.jpg"
+import FourthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftTop2.jpg"
+import FourthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftMain.jpg"
 
 // fifth column 3 images
 import FifthCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
@@ -38,7 +37,7 @@ const FullGalleryDigitalCaricatures = () => {
   const allImages = [
     first, second, third, fourth,
     SecondCfirst, SecondCsecond, SecondCthird, SecondCfourth,
-    thirdCfirst, thirdCSecond, thirdCthird, thirdCfourth,
+    thirdCfirst, thirdCSecond, thirdCthird,
     FourthCfirst, FourthCSecond, FourthCthird,
     FifthCfirst, FifthCSecond, FifthCthird
   ]
@@ -108,7 +107,7 @@ const FullGalleryDigitalCaricatures = () => {
 
         {/* Column 3 (4 stacked) */}
         <div className="flex flex-col gap-4">
-          {[thirdCfirst, thirdCSecond, thirdCthird, thirdCfourth].map((src, i) => (
+          {[thirdCfirst, thirdCSecond, thirdCthird].map((src, i) => (
             <div key={i} className="relative w-full h-[160px] md:h-[220px] rounded-lg overflow-hidden">
               <Image src={src} alt="" fill className="object-cover" />
             </div>
