@@ -26,9 +26,9 @@ import FourthCSecond from "../../../assets/images/gallery/fullgallery/digitalCar
 import FourthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftMain.jpg"
 
 // fifth column 3 images
-import FifthCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import FifthCSecond from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import FifthCthird from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
+import FifthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight1.jpg"
+import FifthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight2.jpg"
+import FifthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight3.jpg"
 
 const FullGalleryDigitalCaricatures = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
