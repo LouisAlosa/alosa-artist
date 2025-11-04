@@ -5,15 +5,15 @@ import { useState } from "react"
 
 // First 4 images first column
 import first from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import second from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import third from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
+import second from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesfirstColumn2.jpg"
+import third from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesfirstColumn3.jpg"
 import fourth from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-middle.jpg"
 
 // second column 4 images
-import SecondCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import SecondCsecond from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import SecondCthird from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
-import SecondCfourth from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-middle.jpg"
+import SecondCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnTop1.jpg"
+import SecondCsecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnTop2.jpg"
+import SecondCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnMiddle.jpg"
+import SecondCfourth from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnBottom1.jpg"
 
 // third column 4 images
 import thirdCfirst from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
