@@ -51,7 +51,7 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
             src={CaricatureFromPhotosimage}
             alt="Event Caricature"
             fill
-            className="object-cover rounded-[8px]"
+            className="object-cover object-top rounded-[8px]"
             priority
           />
         </div>
@@ -67,17 +67,13 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
             </h3>
 
             <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
-              <span className="text-medium-gray text-[16px] font-[400]">Ksh. 5,000/ USD 50 </span> 
-              Per person with a plain background
+              Ksh. 5,000/ USD 50  
+              <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
             </p>
 
             <ul className="list-disc list-inside space-y-3 mt-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional person is <span className="text-carrot-orange">Ksh 4,000/USD 40 each.</span>
-              </li>
-              <li className="font-inter text-[18px] text-medium-gray">
-                Any additional person is{" "}
-                <span className="text-carrot-orange">Ksh 6,000/USD 60 each.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Digital delivery via email.
@@ -116,13 +112,13 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
           {/* This custom grouping accomodates the 'Most popular section shown above */}
           <div className="bg-neutral-gray rounded-[8px] px-6 py-2 shadow-sm flex flex-col justify-between">
             <div>
-                <h3 className="font-fredoka font-[400] text-[24px] text-dark-charcoal mb-2">
+                <h3 className="font-fredoka font-[400] text-center text-[24px] text-dark-charcoal mb-2">
                 Head to waist
                 </h3>
 
-                <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
-                Ksh. 7,000/ USD 70 
-                <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
+                <p className="font-inter text-[20px] text-carrot-orange font-[500] pb-4 mb-1">
+                  Ksh. 7,000/ USD 70 
+                  <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
                 </p>
 
                 <ul className="list-disc list-inside space-y-3 mt-4">
@@ -216,19 +212,19 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
 
             <ul className="list-disc list-inside space-y-3 mt-4">
               <li className="font-inter text-[18px] text-medium-gray">
-                A4 size (21 by $29.7$cm) - <span className="text-carrot-orange">Ksh. 1,500.</span>
+                A4 size (21 by 29.7cm) - <span className="text-carrot-orange">Ksh. 1,500.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
-                A3 size ($29.7$ by $42$cm) - <span className="text-carrot-orange">Ksh. 2,500.</span>
+                A3 size (29.7 by 42cm) - <span className="text-carrot-orange">Ksh. 2,500.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
-                A2 size ($42$ by $59.4$cm) - <span className="text-carrot-orange">Ksh. 3,500.</span>
+                A2 size (42 by 59.4cm) - <span className="text-carrot-orange">Ksh. 3,500.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
-                A1 size ($59.4$ by $84.1$cm) - <span className="text-carrot-orange">Ksh. 5,500.</span>
+                A1 size (59.4 by 84.1cm) - <span className="text-carrot-orange">Ksh. 5,500.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
-                A0 size ($84.1$ by $118.9$cm) - <span className="text-carrot-orange">Ksh. 1,500.</span>
+                A0 size (84.1 by 118.9cm) - <span className="text-carrot-orange">Ksh. 1,500.</span>
               </li>
             </ul>
           </div>
