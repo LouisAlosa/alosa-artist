@@ -35,11 +35,11 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
 
           {/* Paragraphs */}
           <div className="space-y-4 mb-8">
-            <p className="font-inter font-[400] text-[18px] text-medium-gray">
+            <p className="font-inter font-[400] text-[18px] text-medium-gray py-2">
               Caricatures from photos are caricatures drawn using photos as reference: You send photos of people to be drawn. A caricature is a great gift with a personal touch, tailored to specific requirements.
             </p>
 
-            <p className="font-inter font-[400] text-[18px] text-medium-gray">
+            <p className="font-inter font-[400] text-[18px] text-medium-gray py-2">
               The prices below are just for soft copy work which can be sent to your email once done. If you need a hard copy, there are additional costs for prints, photo mounting and framing.
             </p>
           </div>

@@ -47,7 +47,7 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
                 ${
                   isActive
                     ? "bg-carrot-orange text-pure-white shadow-md"
-                    : "bg-silver-gray text-dark-charcoal hover:bg-carrot-orange/80 hover:text-pure-white"
+                    : "bg-silver-gray text-dark-charcoal hover:bg-gray-300 hover:text-dark-charcoal"
                 }`}
             >
               {service}
