@@ -32,7 +32,7 @@ const AboutAlosa = () => {
                 src={SmallCaricature}
                 alt="Small caricature overlay"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-dark-charcoal/20 z-[1]" />
             </div>

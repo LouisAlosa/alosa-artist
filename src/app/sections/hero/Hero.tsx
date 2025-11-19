@@ -163,7 +163,7 @@ const Hero = () => {
             
             {/* Happy Faces Text */}
             <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-light-gray">
-              200+ happy faces
+              1000+ happy faces
             </span>
           </div>
           {/* Scroll Down Button */}
@@ -214,9 +214,6 @@ const Hero = () => {
                 />
               </g>
             </svg>
-            <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-dark-charcoal transition-colors duration-300 group-hover:text-sunset-orange">
-              Scroll Down
-            </span>
           </button>
         </div>
       </div>
