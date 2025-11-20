@@ -29,7 +29,21 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
     "Leave a testimonial": "Submit testimonial",
   }
 
-  // Effect to handle preselected option
+  const placeholderMap: Record<string, string> = {
+    "Order a caricature from photos":
+      "Tell me about the caricature you'd like (number of people, theme, background...)",
+    "Book live event caricatures":
+      "Share your event details (date, venue, expected guests, hours needed...)",
+    "Order wedding/ dowry ecards":
+      "Describe your eCard idea, (couple details, background, text...)",
+    "Leave a testimonial":
+      "Share your experience with Alosa Arts",
+  }
+
+  const dynamicPlaceholder = selectedOption
+    ? placeholderMap[selectedOption]
+    : "Tell me about your caricature idea or event details..."
+
   useEffect(() => {
     if (preselectedOption) {
       setSelectedOption(preselectedOption)
@@ -37,24 +51,22 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
   }, [preselectedOption])
 
   const toggleDropdown = () => setIsOpen(!isOpen)
-  
+
   const selectOption = (option: string) => {
     setSelectedOption(option)
     setIsOpen(false)
   }
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
+    setFormData(prev => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
-    // Basic validation
+
     if (!selectedOption) {
       alert("Please select an option from the dropdown")
       return
@@ -65,21 +77,19 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
       return
     }
 
-    // Form submission logic would go here
     console.log("Form submitted:", {
       service: selectedOption,
       ...formData
     })
 
-    // Success message
-    alert(`Thank you for your ${selectedOption.toLowerCase()}! We'll get back to you within 24 hours.`)
-    
-    // Optional: Reset form
+    alert(
+      `Thank you for your ${selectedOption.toLowerCase()}! We'll get back to you within 24 hours.`
+    )
+
     setSelectedOption("")
     setFormData({ name: "", email: "", message: "" })
   }
 
-  // Determine the button label dynamically
   const buttonLabel = selectedOption
     ? buttonTextMap[selectedOption]
     : "Order a caricature"
@@ -87,7 +97,7 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
   return (
     <section id="contact-form" className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-        {/* Name */}
+
         <div>
           <label
             htmlFor="name"
@@ -107,7 +117,6 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
           />
         </div>
 
-        {/* Email */}
         <div>
           <label
             htmlFor="email"
@@ -127,7 +136,6 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
           />
         </div>
 
-        {/* Dropdown */}
         <div className="relative">
           <label className="block font-fredoka font-[400] text-dark-charcoal mb-2 text-[16px]">
             Select an option
@@ -142,22 +150,14 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
               {selectedOption || "I would like to..."}
             </span>
 
-            {/* Caret Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`w-5 h-5 transition-transform ${
-                isOpen ? "rotate-180" : ""
-              }`}
+              className={`w-5 h-5 transition-transform ${isOpen ? "rotate-180" : ""}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
 
@@ -168,8 +168,8 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
                   key={idx}
                   onClick={() => selectOption(option)}
                   className={`px-4 py-3 hover:bg-[#FFF4EC] cursor-pointer font-inter transition-colors border-b border-gray-100 last:border-b-0 ${
-                    selectedOption === option 
-                      ? "bg-[#FFF4EC] text-carrot-orange font-medium" 
+                    selectedOption === option
+                      ? "bg-[#FFF4EC] text-carrot-orange font-medium"
                       : "text-medium-gray"
                   }`}
                 >
@@ -180,7 +180,6 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
           )}
         </div>
 
-        {/* Message */}
         <div>
           <label
             htmlFor="message"
@@ -193,13 +192,12 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Tell me about your caricature idea or event details..."
+            placeholder={dynamicPlaceholder}
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all min-h-[120px] resize-vertical"
             required
           />
         </div>
 
-        {/* Submit button */}
         <button
           type="submit"
           className="bg-carrot-orange text-white font-fredoka font-[400] text-[17px] py-3 rounded-xl hover:bg-orange-600 transition-all shadow-md"
