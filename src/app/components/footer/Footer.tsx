@@ -32,31 +32,35 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-4 mt-6">
-            <Link href="#" aria-label="Facebook" className="hover:opacity-80">
+            <Link href="http://www.facebook.com/alosaarts" aria-label="Facebook" className="hover:opacity-80" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
                 <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z" />
               </svg>
             </Link>
 
-            <Link href="#" aria-label="Instagram" className="hover:opacity-80">
+            <Link href="http://www.instagram.com/mrlouisalosa" aria-label="Instagram" className="hover:opacity-80" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" />
               </svg>
             </Link>
 
-            <Link href="#" aria-label="YouTube" className="hover:opacity-80">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
-                <path d="M10 15l5.19-3L10 9v6zm11.5-6.5s-.2-1.47-.82-2.12c-.78-.83-1.66-.83-2.06-.88C16.35 5.3 12 5.3 12 5.3h-.01s-4.35 0-6.61.2c-.4.05-1.28.05-2.06.88C2.7 7.03 2.5 8.5 2.5 8.5S2.3 10.07 2.3 11.65v.7c0 1.58.2 3.15.2 3.15s.2 1.47.82 2.12c.78.83 1.8.8 2.26.89 1.64.17 6.43.2 6.43.2s4.35 0 6.61-.2c.4-.05 1.28-.05 2.06-.88.62-.65.82-2.12.82-2.12s.2-1.57.2-3.15v-.7c0-1.58-.2-3.15-.2-3.15z" />
+            <Link href="http://www.youtube.com/louisalosa" aria-label="YouTube" className="hover:opacity-80" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="w-6 h-6 fill-white"
+              >
+                <path d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.408.583A2.97 2.97 0 0 0 .502 6.186 31.58 31.58 0 0 0 0 11.995c-.003 1.956.186 3.91.557 5.837a2.97 2.97 0 0 0 2.09 2.103C4.309 20.49 12 20.49 12 20.49s7.691 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103 31.58 31.58 0 0 0 .557-5.837 31.58 31.58 0 0 0-.557-5.837zM9.75 15.02v-6.05l5.25 3.03-5.25 3.02z"/>
               </svg>
             </Link>
 
-            <Link href="#" aria-label="TikTok" className="hover:opacity-80">
+            <Link href="https://www.tiktok.com/@mrlouisalosa?_t=ZM-9064uX9IM8G&_r=1" aria-label="TikTok" className="hover:opacity-80" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
                 <path d="M12 2h2a4 4 0 0 0 4 4v2a6 6 0 0 1-4-1.5V15a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V2z" />
               </svg>
             </Link>
 
-            <Link href="#" aria-label="Twitter / X" className="hover:opacity-80">
+            <Link href="http://www.x.com/mrlouisalosa" aria-label="Twitter / X" className="hover:opacity-80" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
                 <path d="M22 4.01c-.77.34-1.6.56-2.47.66a4.3 4.3 0 0 0 1.89-2.37 8.6 8.6 0 0 1-2.72 1.04A4.27 4.27 0 0 0 11.3 7.1c0 .34.03.68.1 1A12.1 12.1 0 0 1 3 4.67a4.27 4.27 0 0 0 1.32 5.7 4.2 4.2 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.42 4.19 4.2 4.2 0 0 1-1.93.07 4.28 4.28 0 0 0 3.99 2.97A8.56 8.56 0 0 1 2 19.55a12.08 12.08 0 0 0 6.56 1.93c7.87 0 12.17-6.52 12.17-12.18v-.55A8.73 8.73 0 0 0 22 4.01z" />
               </svg>
@@ -66,7 +70,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-fredoka font-[400] text-[22px] md:text-[24px] mb-3">Quick Links</h3>
+          <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-3">Quick Links</h3>
           <ul className="flex flex-col gap-2 font-inter text-[16px] md:text-[18px] font-[400]">
             <li><Link href="#about" className="hover:underline">About</Link></li>
             <li><Link href="#services" className="hover:underline">Services</Link></li>
@@ -78,7 +82,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h3 className="font-fredoka font-[400] text-[22px] md:text-[24px] mb-3">Contact Info</h3>
+          <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-3">Contact Info</h3>
           <ul className="flex flex-col gap-3 font-inter text-[16px] md:text-[18px] font-[400]">
             <li className="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
@@ -112,11 +116,11 @@ const Footer = () => {
         </p>
         <p className="text-[15px] md:text-[16px] lg:text-[18px] font-[400]">
           Designed by{" "}
-          <Link href="#" className="underline hover:text-light-gray">
+          <Link href="https://www.linkedin.com/in/rachaelngotho/" className="underline hover:text-light-gray" target="_blank">
             Rachael
           </Link>
           , Developed by{" "}
-          <Link href="#" className="underline hover:text-light-gray">
+          <Link href="https://www.linkedin.com/in/nemwel-nyandoro/" className="underline hover:text-light-gray" target="_blank">
             Nemwel
           </Link>
         </p>
