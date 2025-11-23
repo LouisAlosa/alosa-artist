@@ -117,12 +117,13 @@ const Hero = () => {
 
           {/* CTA Button */}
           <button
-            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg mb-12"
-            style={{
-              width: "213px",
-              height: "48px",
-              padding: "12px 32px",
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
             }}
+            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg mb-12 w-full max-w-[213px] px-4 py-3"
           >
             Get Your Caricature
           </button>
