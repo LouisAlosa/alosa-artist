@@ -23,11 +23,17 @@ const Faqs = () => {
     },
   ]
 
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [openFaqs, setOpenFaqs] = useState<number[]>([])
 
   const toggleFaq = (id: number) => {
-    setOpenFaq((prev) => (prev === id ? null : id))
+    setOpenFaqs((prev) =>
+      prev.includes(id)
+        ? prev.filter((faqId) => faqId !== id) // Remove if already open
+        : [...prev, id] // Add if closed
+    )
   }
+
+  const isFaqOpen = (id: number) => openFaqs.includes(id)
 
   return (
     <section className="w-full bg-pure-white py-12 lg:px-[7%]">
@@ -46,7 +52,7 @@ const Faqs = () => {
               </h3>
 
               {/* Inline SVG icon (up/down toggle) */}
-              {openFaq === faq.id ? (
+              {isFaqOpen(faq.id) ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-gray-600 transition-transform duration-200"
@@ -79,7 +85,7 @@ const Faqs = () => {
               )}
             </button>
 
-            {openFaq === faq.id && (
+            {isFaqOpen(faq.id) && (
               <p className="font-inter font-[400] text-medium-gray text-[16px] lg:text-[17px] py-4">
                 {faq.faqBody}
               </p>
