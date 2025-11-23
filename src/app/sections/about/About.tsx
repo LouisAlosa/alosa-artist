@@ -3,6 +3,8 @@
 import Image from "next/image"
 import MainCaricature from "../../assets/images/about/main-alosa.jpg"
 import SmallCaricature from "../../assets/images/about/mini-alosa-about.jpg"
+import mediaColaboration from "../../assets/images/about/media_collaborations.png"
+import notableEvents from "../../assets/images/about/notable_events.png"
 
 const AboutAlosa = () => {
   return (
@@ -58,9 +60,13 @@ const AboutAlosa = () => {
             <div className="max-w-[640px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
               <div className="flex items-start gap-3">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="#E67E22">
-                    <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
-                  </svg>
+                  <Image
+                    src={mediaColaboration}
+                    alt="Profile icon"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6"
+                  />
                 </div>
                 <div>
                   <h3 className="font-inter text-dark-charcoal text-[18px] font-normal">
@@ -90,9 +96,13 @@ const AboutAlosa = () => {
 
               <div className="flex items-start gap-3 sm:col-span-2">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="#E67E22">
-                    <path d="M18 2h-3V1a1 1 0 0 0-2 0v1H8a1 1 0 0 0-1 1v3a5 5 0 0 0 4 4.9V14H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-3.1A5 5 0 0 0 17 6V3a1 1 0 0 0-1-1zm-1 4a3 3 0 0 1-6 0V4h6z" />
-                  </svg>
+                  <Image
+                    src={notableEvents}
+                    alt="Profile icon"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6"
+                  />
                 </div>
                 <div>
                   <h3 className="font-inter text-dark-charcoal text-[18px] font-normal">
