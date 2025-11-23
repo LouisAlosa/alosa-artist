@@ -41,11 +41,11 @@ const GalleryTopBar = ({ activeGallery, setActiveGallery }: GalleryTopBarProps) 
                     onClick={() => setActiveGallery(gallery)}
                     type="button"
                     className={`min-w-[220px] lg:w-[240px] py-3 rounded-[8px] font-fredoka font-[400] text-[16px] transition-all duration-200
-                        ${
-                        isActive
-                            ? "bg-carrot-orange text-pure-white shadow-md"
-                            : "bg-silver-gray text-dark-charcoal hover:bg-carrot-orange/80 hover:text-pure-white"
-                        }`}
+                    ${
+                    isActive
+                        ? "bg-carrot-orange text-pure-white shadow-md"
+                        : "bg-silver-gray text-dark-charcoal hover:bg-gray-300 hover:text-dark-charcoal"
+                    }`}
                     >
                     {gallery}
                     </button>
