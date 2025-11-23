@@ -14,14 +14,19 @@ const Footer = () => {
         <div className="flex flex-col items-start">
           {/* Logo */}
           <div className="flex items-center mb-4">
-            <Image
-              src={logo}
-              alt="Alosa Arts Logo"
-              width={183.38}
-              height={78}
-              priority
-              className="w-auto h-[52px] md:h-[78px]"
-            />
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="cursor-pointer"
+            >
+              <Image
+                src={logo}
+                alt="Alosa Arts Logo"
+                width={183.38}
+                height={78}
+                priority
+                className="w-auto h-[52px] md:h-[78px]"
+              />
+            </button>
           </div>
 
           <p className="text-[16px] md:text-[17px] lg:text-[18px] font-[400] max-w-[380px]">
