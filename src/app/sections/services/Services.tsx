@@ -21,7 +21,7 @@ const MyServices = ({ onServiceOrder }: MyServicesProps) => {
   }
 
   return (
-    <section className="bg-pure-white px-[5%] py-16">
+    <section id="services" className="bg-pure-white px-[5%] py-16">
       {/* Top Bar with buttons */}
       <MyServicesTopBar activeService={activeService} setActiveService={setActiveService} />
 

@@ -10,7 +10,7 @@ interface TestimonialsProps {
 
 const Testimonials = ({ onServiceOrder }: TestimonialsProps) => {
   return (
-    <section className="bg-pure-white py-16">
+    <section id="testimonials" className="bg-pure-white py-16">
       <TestimonialsTopBar />
       <TestimonialsBody />
       <TestimonialsButton onServiceOrder={onServiceOrder} />
