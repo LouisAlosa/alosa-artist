@@ -53,7 +53,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative min-h-[80vh] lg:max-h-[65vh] xl:max-h-[70vh] flex items-center justify-center overflow-hidden bg-dark-charcoal py-12 lg:py-24">
+    <section className="relative min-h-[80vh] lg:max-h-[65vh] xl:max-h-[70vh] flex items-center justify-center overflow-hidden bg-dark-charcoal py-12 lg:py-18">
       {/* Background Caricatures Grid */}
       <div className="absolute inset-0 z-0 flex flex-col gap-1">
         {/* Row 1 - First 4 images */}
@@ -222,4 +222,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

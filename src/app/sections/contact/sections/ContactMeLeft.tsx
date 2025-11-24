@@ -2,11 +2,11 @@
 
 const ContactMeLeft = () => {
   return (
-    <section className="bg-pure-white w-full mb-6 text-left">
+    <section className="bg-soft-gray w-full mb-6 text-left">
       {/* Contact me intro section */}
       <div className="flex flex-col lg:items-start justify-center max-w-[800px] mx-auto">
         {/* Heading */}
-        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-3">
+        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-2">
           Let&apos;s Get Sketching!
         </h2>
 
@@ -21,7 +21,7 @@ const ContactMeLeft = () => {
 
         {/* Contact Details Section */}
         <div className="w-full max-w-[360px] text-left">
-          <h3 className="font-inter font-[600] text-dark-charcoal text-[18px] lg:text-[20px] mb-4">
+          <h3 className="font-inter font-[400] text-dark-charcoal text-[18px] lg:text-[20px] mb-4">
             Contact Details
           </h3>
 
@@ -32,14 +32,15 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
               </div>
@@ -54,14 +55,15 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a2 2 0 011.96 1.54l.59 2.35a2 2 0 01-.45 1.78l-1.27 1.52a11.05 11.05 0 005.05 5.05l1.52-1.27a2 2 0 011.78-.45l2.35.59a2 2 0 011.54 1.96V19a2 2 0 01-2 2h-1C8.82 21 3 15.18 3 8V5z"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
               </div>
@@ -76,20 +78,21 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 11c1.656 0 3-1.344 3-3S13.656 5 12 5 9 6.344 9 8s1.344 3 3 3z"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                   />
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 22s8-7.582 8-14a8 8 0 10-16 0c0 6.418 8 14 8 14z"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
               </div>

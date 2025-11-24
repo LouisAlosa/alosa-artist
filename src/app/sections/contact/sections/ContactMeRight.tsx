@@ -95,8 +95,8 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
     : "Order a caricature"
 
   return (
-    <section id="contact-form" className="bg-off-white px-5 py-8 rounded-2xl shadow-sm h-full">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+    <section id="contact-form" className="bg-soft-gray px-5 py-8 rounded-2xl h-full">
+      <form onSubmit={handleSubmit} className="bg-neutral-gray flex flex-col gap-5 p-6 rounded-[8px]">
 
         <div>
           <label
@@ -200,7 +200,7 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
 
         <button
           type="submit"
-          className="bg-carrot-orange text-white font-fredoka font-[400] text-[17px] py-3 rounded-xl hover:bg-orange-600 transition-all shadow-md"
+          className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg shadow-md w-full px-4 py-3"
         >
           {buttonLabel}
         </button>

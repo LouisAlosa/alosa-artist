@@ -38,7 +38,7 @@ const Illustrations = () => {
     setActiveIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))
 
   return (
-    <section className="bg-pure-white w-full py-10 md:px-[5%] relative">
+    <section className="bg-soft-gray w-full py-10 md:px-[5%] relative">
       <div className="max-w-[1200px] mx-auto relative">
         {isMobile && activeIndex !== null ? (
           <div className="w-full aspect-[4/3] relative mx-auto rounded-[16px] overflow-hidden">

@@ -23,7 +23,7 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
   }
 
   return (
-    <section className="bg-pure-white w-full flex flex-col items-center py-10 md:py-16 md:px-10">
+    <section className="bg-pure-white w-full flex flex-col items-center py-8 md:py-8 md:px-10">
       {/* Main wrapper for text + image */}
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row md:items-start md:justify-between gap-8">
         {/* Text Content */}
@@ -66,14 +66,14 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
               Head to shoulders/chest
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 5,000/ USD 50  
               <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
-                Any additional person is <span className="text-carrot-orange">Ksh 4,000/USD 40 each.</span>
+                Any additional person is <span className="text-carrot-orange">Ksh. 4,000/USD 40 each.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Digital delivery via email.
@@ -105,12 +105,12 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
         </div>
 
         {/* Head to waist */}
-        <div className="rounded-t-[8px]">
-          <div className="w-full bg-bright-yellow text-center p-2">
+        <div className="rounded-t-[8px] mt-[-14px]">
+          <div className="rounded-t-[8px] w-full bg-bright-yellow text-center p-2">
             <p className="font-inter text-[20px]">Most Popular</p>
           </div>
           {/* This custom grouping accomodates the 'Most popular section shown above */}
-          <div className="bg-neutral-gray rounded-[8px] px-6 py-2 shadow-sm flex flex-col justify-between">
+          <div className="bg-neutral-gray rounded-[8px] px-6 py-2 shadow-sm flex flex-col justify-between pb-6">
             <div>
                 <h3 className="font-fredoka font-[400] text-center text-[24px] text-dark-charcoal mb-2">
                 Head to waist
@@ -124,7 +124,7 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
                 <ul className="list-disc list-inside space-y-3 mt-4">
                 <li className="font-inter text-[18px] text-medium-gray">
                     Any additional person is 
-                    <span className="text-carrot-orange"> Ksh 6,000/USD 60 each.</span>
+                    <span className="text-carrot-orange"> Ksh. 6,000/USD 60 each.</span>
                 </li>
                 <li className="font-inter text-[18px] text-medium-gray">
                     Digital delivery via email.
@@ -163,15 +163,15 @@ const CaricatureFromPhotos = ({ onOrderPackage }: CaricatureFromPhotosProps) => 
               Head to feet/full body
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 9,000/ USD 90 
               <span className="text-medium-gray text-[16px] font-[400]"> Per person with a plain background</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional person is 
-                <span className="text-carrot-orange"> Ksh 8,000/USD 80 each.</span>
+                <span className="text-carrot-orange"> Ksh. 8,000/USD 80 each.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Digital delivery via email.

@@ -9,7 +9,7 @@ interface ContactMeProps {
 
 const ContactMe = ({ preselectedOption = "" }: ContactMeProps) => {
     return (
-        <section id="contact" className="px-[5%] py-12">
+        <section id="contact" className="bg-soft-gray px-[5%] lg:px-[8%] py-10">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12">
                     {/* Left Section - Takes half width on desktop */}

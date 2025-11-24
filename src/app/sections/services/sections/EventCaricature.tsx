@@ -23,7 +23,7 @@ const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
   }
 
   return (
-    <section className="bg-pure-white w-full flex flex-col items-center py-10 md:py-16 md:px-10">
+    <section className="bg-pure-white w-full flex flex-col items-center py-8 md:py-8 md:px-10">
       {/* Main wrapper for text + image */}
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row md:items-start md:justify-between gap-8">
         {/* Text Content */}
@@ -71,18 +71,18 @@ const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
               Black and White Caricatures
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 10,000 / USD 100{" "}
               <span className="text-medium-gray text-[16px] font-[400]">Per hour</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 It takes 3–5 minutes per face.
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Branded papers with company or event logo have an additional charge of{" "}
-                <span className="text-carrot-orange">Ksh 2,000 / USD 20 per hour.</span>
+                <span className="text-carrot-orange">Ksh. 2,000 / USD 20 per hour.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 For gigs outside Nairobi, transport and accommodation (where applicable) are covered by the client.
@@ -109,18 +109,18 @@ const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
               Coloured Caricatures
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 13,000 / USD 130{" "}
               <span className="text-medium-gray text-[16px] font-[400]">Per hour</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 It takes 4–6 minutes per face.
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Branded papers with company or event logo have an additional charge of{" "}
-                <span className="text-carrot-orange">Ksh 2,000 / USD 20 per hour.</span>
+                <span className="text-carrot-orange">Ksh. 2,000 / USD 20 per hour.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 For gigs outside Nairobi, transport and accommodation (where applicable) are covered by the client.

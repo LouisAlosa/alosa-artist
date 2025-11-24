@@ -14,11 +14,11 @@ const GalleryTopBar = ({ activeGallery, setActiveGallery }: GalleryTopBarProps) 
     ]
 
     return (
-        <section className="bg-pure-white w-full mb-6">
+        <section className="bg-soft-gray w-full mb-6">
             {/* Gallery intro section */}
-            <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center">
+            <div className="flex flex-col items-center justify-center w-full mx-auto text-center">
                 {/* Heading */}
-                <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">
+                <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-2">
                 Gallery
                 </h2>
 
@@ -26,7 +26,7 @@ const GalleryTopBar = ({ activeGallery, setActiveGallery }: GalleryTopBarProps) 
                 <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
 
                 {/* Description */}
-                <p className="font-inter font-[400] text-medium-gray text-[18px] max-w-[640px]">
+                <p className="font-inter font-[400] text-medium-gray text-[18px] text-center max-w-[880px]">
                   Browse through some of my favorite caricatures from events and custom orders. Each piece captures not just a likeness, but a personality!
                 </p>
             </div>

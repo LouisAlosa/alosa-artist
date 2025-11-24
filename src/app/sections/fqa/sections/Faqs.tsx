@@ -36,12 +36,12 @@ const Faqs = () => {
   const isFaqOpen = (id: number) => openFaqs.includes(id)
 
   return (
-    <section className="w-full bg-pure-white py-12 lg:px-[7%]">
+    <section className="w-full bg-pure-white py-8 lg:px-[7%]">
       <div className="flex flex-col gap-4 w-full mx-auto">
         {alosaFaqs.map((faq) => (
           <div
             key={faq.id}
-            className="bg-off-white rounded-xl shadow-sm border border-gray-100 p-5 my-2 transition-all duration-300"
+            className="bg-off-white rounded-[8px] p-5 my-2 transition-all duration-300"
           >
             <button
               onClick={() => toggleFaq(faq.id)}

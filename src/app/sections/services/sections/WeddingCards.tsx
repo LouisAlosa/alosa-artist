@@ -23,7 +23,7 @@ const WeddingCards = ({ onOrderPackage }: WeddingCardsProps) => {
   }
 
   return (
-    <section className="bg-pure-white w-full flex flex-col items-center py-10 md:py-16 md:px-10">
+    <section className="bg-pure-white w-full flex flex-col items-center py-8 md:py-8 md:px-10">
       {/* Main wrapper for text + image */}
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row md:items-start md:justify-between gap-8">
         {/* Text Content */}
@@ -70,18 +70,18 @@ const WeddingCards = ({ onOrderPackage }: WeddingCardsProps) => {
               Head to waist
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 15,000/ USD 150{" "}
               <span className="text-medium-gray text-[16px] font-[400]">Per couple</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 Plain background with text.
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional person is{" "}
-                <span className="text-carrot-orange">Ksh 6,000/USD 60 each.</span>
+                <span className="text-carrot-orange">Ksh. 6,000/USD 60 each.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional items in the caricatures such as vehicles, pets, detailed backgrounds (landscapes, buildings, oceans etc) have additional charges starting from
@@ -109,18 +109,18 @@ const WeddingCards = ({ onOrderPackage }: WeddingCardsProps) => {
               Head to feet/full body
             </h3>
 
-            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1">
+            <p className="font-inter text-[20px] text-carrot-orange font-[500] mb-1 pb-4">
               Ksh. 19,000/ USD 190{" "}
               <span className="text-medium-gray text-[16px] font-[400]">Per couple</span>
             </p>
 
-            <ul className="list-disc list-inside space-y-3 mt-4">
+            <ul className="list-disc list-inside space-y-3 mt-4 pb-4">
               <li className="font-inter text-[18px] text-medium-gray">
                 Plain background with text.
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional person is {" "}
-                <span className="text-carrot-orange">Ksh 8,000/USD 80 each.</span>
+                <span className="text-carrot-orange">Ksh. 8,000/USD 80 each.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Any additional items in the caricatures such as vehicles, pets, detailed backgrounds (landscapes, buildings, oceans etc) have additional charges starting from
