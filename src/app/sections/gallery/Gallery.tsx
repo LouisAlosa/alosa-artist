@@ -21,7 +21,7 @@ const Gallery = () => {
     };
 
     return (
-        <section className="bg-pure-white px-[5%] py-16">
+        <section id="gallery" className="bg-soft-gray px-[5%] py-10 lg:py-14">
             <GalleryTopBar activeGallery={activeGallery} setActiveGallery={setActiveGallery} />
 
             {/* Conditionally render based on the selected Gallery section */}

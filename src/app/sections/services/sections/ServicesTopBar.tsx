@@ -17,9 +17,9 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
   return (
     <section className="bg-pure-white w-full">
       {/* Services intro section */}
-      <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center">
+      <div className="flex flex-col items-center justify-center w-full mx-auto text-center">
         {/* Heading */}
-        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">
+        <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-2">
           My Services
         </h2>
 
@@ -27,7 +27,7 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
         <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
 
         {/* Description */}
-        <p className="font-inter font-[400] text-medium-gray text-[18px] max-w-[640px]">
+        <p className="font-inter font-[400] text-medium-gray text-[18px] text-center max-w-[880px]">
           Looking for that unique gift? Something extraordinary? Whether it&apos;s for a birthday,
           a retirement, baby shower, friendship or a &apos;just because&apos; caricature as a gift will
           always win.
@@ -47,7 +47,7 @@ const MyServicesTopBar = ({ activeService, setActiveService }: MyServicesTopBarP
                 ${
                   isActive
                     ? "bg-carrot-orange text-pure-white shadow-md"
-                    : "bg-silver-gray text-dark-charcoal hover:bg-carrot-orange/80 hover:text-pure-white"
+                    : "bg-silver-gray text-dark-charcoal hover:bg-gray-300 hover:text-dark-charcoal"
                 }`}
             >
               {service}

@@ -2,23 +2,57 @@
 
 import Image from "next/image";
 import AlosaLogo from "../../assets/images/alosa-logo.png"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Disable scroll when mobile menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to re-enable scroll when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [menuOpen]);
+
+  // Close menu when user scrolls
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [menuOpen]);
 
   return (
     <header className="bg-soft-gray h-[68px] lg:h-[78px] px-[5%] flex items-center justify-between relative">
       {/* Alosa image logo appears here */}
       <div className="flex items-center">
-        <Image 
-          src={AlosaLogo} 
-          alt="Alosa Arts Logo" 
-          width={183.38} 
-          height={78} 
-          priority 
-          className="w-auto h-[52px] md:h-[78px]" // Mobile: 52px height, Desktop: 78px height
-        />
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="cursor-pointer"
+        >
+          <Image 
+            src={AlosaLogo} 
+            alt="Alosa Arts Logo" 
+            width={183.38} 
+            height={78} 
+            priority 
+            className="w-auto h-[52px] md:h-[78px]" // Mobile: 52px height, Desktop: 78px height
+          />
+        </button>
       </div>
 
       {/* Navigation Toggle (Mobile) */}

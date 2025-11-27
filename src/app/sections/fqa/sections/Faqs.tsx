@@ -23,19 +23,25 @@ const Faqs = () => {
     },
   ]
 
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [openFaqs, setOpenFaqs] = useState<number[]>([])
 
   const toggleFaq = (id: number) => {
-    setOpenFaq((prev) => (prev === id ? null : id))
+    setOpenFaqs((prev) =>
+      prev.includes(id)
+        ? prev.filter((faqId) => faqId !== id) // Remove if already open
+        : [...prev, id] // Add if closed
+    )
   }
 
+  const isFaqOpen = (id: number) => openFaqs.includes(id)
+
   return (
-    <section className="w-full bg-pure-white py-12 lg:px-[7%]">
+    <section className="w-full bg-pure-white py-8 lg:px-[7%]">
       <div className="flex flex-col gap-4 w-full mx-auto">
         {alosaFaqs.map((faq) => (
           <div
             key={faq.id}
-            className="bg-off-white rounded-xl shadow-sm border border-gray-100 p-5 my-2 transition-all duration-300"
+            className="bg-off-white rounded-[8px] p-5 my-2 transition-all duration-300"
           >
             <button
               onClick={() => toggleFaq(faq.id)}
@@ -46,7 +52,7 @@ const Faqs = () => {
               </h3>
 
               {/* Inline SVG icon (up/down toggle) */}
-              {openFaq === faq.id ? (
+              {isFaqOpen(faq.id) ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-gray-600 transition-transform duration-200"
@@ -79,7 +85,7 @@ const Faqs = () => {
               )}
             </button>
 
-            {openFaq === faq.id && (
+            {isFaqOpen(faq.id) && (
               <p className="font-inter font-[400] text-medium-gray text-[16px] lg:text-[17px] py-4">
                 {faq.faqBody}
               </p>

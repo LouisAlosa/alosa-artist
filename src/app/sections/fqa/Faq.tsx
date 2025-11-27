@@ -5,7 +5,7 @@ import FaqTopBar from "./sections/FaqTopBar";
 
 const Faq = () => {
     return (
-        <section className="px-[5%] w-full">
+        <section className="px-[5%] py-12 w-full">
             <FaqTopBar />
             <Faqs />
         </section>

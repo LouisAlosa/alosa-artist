@@ -2,12 +2,12 @@
 
 const FaqTopBar = () => {
     return (
-        <section className="bg-pure-white w-full mb-6">
+        <section className="bg-pure-white w-full mb-4">
             {/* Frequently Asked Questions intro section */}
             <div className="flex flex-col items-center justify-center max-w-[800px] mx-auto text-center">
                 {/* Heading */}
-                <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-4">
-                Frequently Asked Questions
+                <h2 className="font-fredoka font-[400] text-dark-charcoal text-[36px] mb-2">
+                  Frequently Asked Questions
                 </h2>
 
                 {/* Divider */}

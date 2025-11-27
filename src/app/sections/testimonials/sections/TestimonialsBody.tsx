@@ -54,7 +54,7 @@ const TestimonialsBody = () => {
   const { text, name, type, image, textCarrot } = testimonials[current]
 
   return (
-    <section className="w-full flex flex-col items-center justify-center text-center py-10 lg:py-16 bg-white">
+    <section className="w-full flex flex-col items-center justify-center text-center py-10 bg-white">
       {/* Testimonial text */}
       <p className="text-medium-gray text-center px-6 md:px-12 lg:px-[10%] font-inter font-[400] text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed mb-8">
         {text}
@@ -141,22 +141,6 @@ const TestimonialsBody = () => {
         >
           ❮
         </button>
-
-        {/* Dot indicators */}
-        <div className="flex gap-2">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                index === current
-                  ? "bg-gray-900 scale-110"
-                  : "bg-gray-300 hover:bg-gray-400"
-              }`}
-              aria-label={`Go to testimonial ${index + 1}`}
-            />
-          ))}
-        </div>
 
         <button
           onClick={handleNext}

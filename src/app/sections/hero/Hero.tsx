@@ -53,7 +53,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative min-h-[80vh] lg:max-h-[65vh] xl:max-h-[70vh] flex items-center justify-center overflow-hidden bg-dark-charcoal py-12 lg:py-24">
+    <section className="relative min-h-[80vh] lg:max-h-[65vh] xl:max-h-[70vh] flex items-center justify-center overflow-hidden bg-dark-charcoal py-12 lg:py-18">
       {/* Background Caricatures Grid */}
       <div className="absolute inset-0 z-0 flex flex-col gap-1">
         {/* Row 1 - First 4 images */}
@@ -117,12 +117,13 @@ const Hero = () => {
 
           {/* CTA Button */}
           <button
-            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg mb-12"
-            style={{
-              width: "213px",
-              height: "48px",
-              padding: "12px 32px",
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
             }}
+            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg mb-12 w-full max-w-[213px] px-4 py-3"
           >
             Get Your Caricature
           </button>
@@ -163,7 +164,7 @@ const Hero = () => {
             
             {/* Happy Faces Text */}
             <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-light-gray">
-              200+ happy faces
+              1000+ happy faces
             </span>
           </div>
           {/* Scroll Down Button */}
@@ -214,9 +215,6 @@ const Hero = () => {
                 />
               </g>
             </svg>
-            <span className="font-inter font-normal text-[14px] leading-[28px] tracking-[0%] text-dark-charcoal transition-colors duration-300 group-hover:text-sunset-orange">
-              Scroll Down
-            </span>
           </button>
         </div>
       </div>
@@ -224,4 +222,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

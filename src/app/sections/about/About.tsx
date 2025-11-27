@@ -3,13 +3,15 @@
 import Image from "next/image"
 import MainCaricature from "../../assets/images/about/main-alosa.jpg"
 import SmallCaricature from "../../assets/images/about/mini-alosa-about.jpg"
+import mediaColaboration from "../../assets/images/about/media_collaborations.svg"
+import notableEvents from "../../assets/images/about/notable_events.svg"
 
 const AboutAlosa = () => {
   return (
-    <section id="about" className="bg-soft-gray px-[5%] py-16 lg:py-24">
+    <section id="about" className="bg-soft-gray px-[5%] lg:px-[8%] py-10 lg:py-12">
       {/* Container centered on page */}
       <div className="max-w-[1200px] mx-auto">
-        <div className="flex flex-col lg:grid lg:grid-cols-[360px_1fr] lg:items-center gap-12 lg:gap-16">
+        <div className="flex flex-col lg:grid lg:grid-cols-[300px_1fr] lg:items-center gap-12 lg:gap-42">
           {/* LEFT: Image */}
           <div className="relative w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] lg:w-[360px] lg:h-[360px] flex-shrink-0 mx-auto lg:mx-0">
             {/* Yellow Circle Border */}
@@ -27,12 +29,12 @@ const AboutAlosa = () => {
             </div>
 
             {/* Small Tilted Overlay */}
-            <div className="absolute bottom-[-20px] right-[-10px] w-[100px] h-[90px] sm:w-[120px] sm:h-[110px] lg:w-[140px] lg:h-[120px] transform rotate-6 rounded-[8px] shadow-lg overflow-hidden">
+            <div className="absolute bottom-[-20px] right-[-10px] w-[100px] h-[120px] sm:w-[120px] sm:h-[110px] lg:w-[140px] lg:h-[150px] transform rotate-6 rounded-[8px] shadow-lg overflow-hidden">
               <Image
                 src={SmallCaricature}
                 alt="Small caricature overlay"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-dark-charcoal/20 z-[1]" />
             </div>
@@ -40,17 +42,17 @@ const AboutAlosa = () => {
 
           {/* RIGHT: Text Content */}
           <div className="w-full max-w-[600px] lg:max-w-none flex flex-col lg:justify-center">
-            <h2 className="font-fredoka text-[36px] font-[400] text-dark-charcoal mb-4">
+            <h2 className="font-fredoka text-[36px] font-[400] text-dark-charcoal mb-2">
               About Me
             </h2>
 
             <div className="bg-silver-gray w-[80px] h-[6px] rounded-sm mb-6" />
 
-            <p className="mt-2 font-inter text-[18px] text-medium-gray mb-4 max-w-[640px]">
+            <p className="mt-2 font-inter text-[18px] text-medium-gray mb-4 w-full">
               Louis Alosa is a caricature artist based in Nairobi, Kenya. His love for art began in childhood, sketching in school books and drawing inspiration from cartoonists Gado and KJ (Hon. John Kiarie). For the past 9 years, he has mastered the art of whimsical exaggeration, believing that everyone has a cartoon version of themselves waiting to be set free.
             </p>
 
-            <p className="font-inter text-[18px] text-medium-gray mb-10 max-w-[640px]">
+            <p className="font-inter text-[18px] text-medium-gray mb-10 w-full">
               Louis has spent the last 5 years energizing weddings, corporate events, and festivals with live caricatures transforming rooms into laughter-filled galleries. He has worked with brands and events such as PWC (2022), Safaricom Dealer Awards (2025), Capital Club Anniversary (2024), Colgate Campaign (2024), Exotel Workshops (2023 - 2024), and Mavuno Church (2023). He also collaborated with Africa Uncensored on The Big Picture Show (2022 - 2023).
             </p>
 
@@ -58,9 +60,13 @@ const AboutAlosa = () => {
             <div className="max-w-[640px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
               <div className="flex items-start gap-3">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="#E67E22">
-                    <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
-                  </svg>
+                  <Image
+                    src={mediaColaboration}
+                    alt="Profile icon"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6"
+                  />
                 </div>
                 <div>
                   <h3 className="font-inter text-dark-charcoal text-[18px] font-normal">
@@ -90,9 +96,13 @@ const AboutAlosa = () => {
 
               <div className="flex items-start gap-3 sm:col-span-2">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-gray flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="#E67E22">
-                    <path d="M18 2h-3V1a1 1 0 0 0-2 0v1H8a1 1 0 0 0-1 1v3a5 5 0 0 0 4 4.9V14H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-3.1A5 5 0 0 0 17 6V3a1 1 0 0 0-1-1zm-1 4a3 3 0 0 1-6 0V4h6z" />
-                  </svg>
+                  <Image
+                    src={notableEvents}
+                    alt="Profile icon"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6"
+                  />
                 </div>
                 <div>
                   <h3 className="font-inter text-dark-charcoal text-[18px] font-normal">
