@@ -199,12 +199,13 @@ const DigitalCaricatures = () => {
         )}
 
         {!isMobile && activeIndex !== null && (
-          <div className="absolute inset-0 z-20 bg-black/90 flex h-full justify-center items-center rounded-[16px] overflow-hidden">
-            <div className="relative w-full h-full max-w-[95%] max-h-[100%] flex items-center justify-center p-8">
+          <div className="absolute inset-0 z-20 bg-black/90 flex items-center justify-center rounded-[16px] overflow-hidden h-full">
+            <div className="relative w-full h-full max-w-[95%] max-h-[95%] flex items-center justify-center">
               <Image
                 src={images[activeIndex].src}
                 alt={images[activeIndex].alt}
                 width={1000}
+                height={800}
                 className="object-contain w-auto h-full max-w-full max-h-full rounded-lg"
                 priority
               />
