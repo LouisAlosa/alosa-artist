@@ -159,12 +159,13 @@ const Illustrations = () => {
         )}
 
         {!isMobile && activeIndex !== null && (
-          <div className="absolute inset-0 z-20 bg-black/90 flex h-full justify-center items-center rounded-[16px] overflow-hidden">
-            <div className="relative w-full h-full max-w-[95%] max-h-[100%] flex items-center justify-center p-8">
+          <div className="absolute inset-0 z-20 bg-black/90 flex items-center justify-center rounded-[16px] overflow-hidden h-full">
+            <div className="relative w-full h-full max-w-[95%] max-h-[95%] flex items-center justify-center">
               <Image
                 src={images[activeIndex].src}
                 alt={images[activeIndex].alt}
                 width={1000}
+                height={800}
                 className="object-contain w-auto h-full max-w-full max-h-full rounded-lg"
                 priority
               />
@@ -190,14 +191,14 @@ const Illustrations = () => {
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={showNext}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
                   aria-label="Next"
                 >
                   ›
                 </button>
               )}
 
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/80 rounded-full px-4 py-2 text-lg font-medium">
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-white/15 rounded-full px-4 py-2 text-lg font-medium">
                 {activeIndex + 1} / {images.length}
               </div>
             </div>

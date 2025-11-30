@@ -76,7 +76,7 @@ const DigitalCaricatures = () => {
               {activeIndex > 0 && (
                 <button
                   onClick={(e) => { e.stopPropagation(); showPrevious() }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-black/90 z-10"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-white/25 z-10"
                   aria-label="Previous"
                 >
                   ‹
@@ -85,7 +85,7 @@ const DigitalCaricatures = () => {
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={(e) => { e.stopPropagation(); showNext() }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-black/90 z-10"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-white/25 z-10"
                   aria-label="Next"
                 >
                   ›
@@ -221,7 +221,7 @@ const DigitalCaricatures = () => {
               {activeIndex > 0 && (
                 <button
                   onClick={showPrevious}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-white/25 hover:scale-110 transition-all duration-200 z-50"
                   aria-label="Previous"
                 >
                   ‹
@@ -231,7 +231,7 @@ const DigitalCaricatures = () => {
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={showNext}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-white/25 hover:scale-110 transition-all duration-200 z-50"
                   aria-label="Next"
                 >
                   ›
