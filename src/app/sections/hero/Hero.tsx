@@ -144,7 +144,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-deep-charcoal opacity-92 z-[1]" />
 
       {/* Main Content */}
-      <div className="relative z-10 w-full mx-auto px-[5%] lg:px-[8%] xl:px-[10%]">
+      <div className="relative z-10 w-full mx-auto px-[5%] lg:px-[7%]">
         <div
           className={`max-w-4xl transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

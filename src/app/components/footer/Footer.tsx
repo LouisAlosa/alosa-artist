@@ -4,13 +4,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 import logo from "../../assets/images/alosa-logo.png"
+import emailFillIcon from "../../assets/images/footer/emailfillicon.svg";
 
 const Footer = () => {
   return (
     <footer className="bg-saddle-brown text-pure-white px-[5%] py-10 font-inter">
-      {/* Top Grid Section */}
-      <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-16 mb-10">
-        {/* Logo and description */}
+      {/* Top Grid Section - Updated alignment only */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-16 mb-10">
+        {/* Logo and description - Left aligned */}
         <div className="flex flex-col items-start">
           {/* Logo */}
           <div className="flex items-center mb-4">
@@ -73,10 +74,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-3">Quick Links</h3>
-          <ul className="flex flex-col gap-2 font-inter text-[16px] md:text-[18px] font-[400]">
+        {/* Quick Links - Centered vertical list */}
+        <div className="flex flex-col items-center">
+          <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-4 md:mb-6">Quick Links</h3>
+          <ul className="flex flex-col items-center gap-3 font-inter text-[16px] md:text-[17px] lg:text-[18px] font-[400]">
             <li><Link href="#about" className="hover:underline">About</Link></li>
             <li><Link href="#services" className="hover:underline">Services</Link></li>
             <li><Link href="#gallery" className="hover:underline">Gallery</Link></li>
@@ -85,27 +86,31 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
-        <div>
+        {/* Contact Info - Right aligned */}
+        <div className="flex flex-col items-end">
           <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-3">Contact Info</h3>
-          <ul className="flex flex-col gap-3 font-inter text-[16px] md:text-[18px] font-[400]">
+          <ul className="flex flex-col gap-3 font-inter text-[16px] md:text-[18px] font-[400] items-end">
             <li className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 11 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/>
-              </svg>
-              <span>alosa.louis@gmail.com</span>
+              <Image 
+                src={emailFillIcon} 
+                alt="Email icon" 
+                width={20}
+                height={20}
+                className="w-5 h-5"
+              />
+              <span className="text-[16px] md:text-[17px] lg:text-[18px]">alosa.louis@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                 <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1v3.44a1 1 0 0 1-1 1A17 17 0 0 1 3 5a1 1 0 0 1 1-1h3.44a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.01l-2.15 2.2z"/>
               </svg>
-              <span>+254721787390</span>
+              <span className="text-[16px] md:text-[17px] lg:text-[18px]">+254721787390</span>
             </li>
             <li className="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                 <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
               </svg>
-              <span>Nairobi, Kenya</span>
+              <span className="text-[16px] md:text-[17px] lg:text-[18px]">Nairobi, Kenya</span>
             </li>
           </ul>
         </div>
@@ -115,7 +120,7 @@ const Footer = () => {
       <hr className="border-gray-300 mt-8 mb-6" />
 
       {/* Bottom Copyright Section */}
-      <div className="flex flex-col md:flex-row justify-between gap-2 md:text-left">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0">
         <p className="text-[15px] md:text-[16px] lg:text-[18px] font-[400]">
           © 2025 Alosa Arts. All rights reserved.
         </p>

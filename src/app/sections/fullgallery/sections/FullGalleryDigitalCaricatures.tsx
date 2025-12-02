@@ -62,7 +62,7 @@ const FullGalleryDigitalCaricatures = () => {
         </p>
       </div>
 
-      <div className="px-6">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
           {allImages.map((image, index) => (
             <div
