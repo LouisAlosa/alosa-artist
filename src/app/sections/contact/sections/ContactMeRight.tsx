@@ -9,6 +9,7 @@ interface ContactMeRightProps {
 const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
   const [selectedOption, setSelectedOption] = useState("")
   const [isOpen, setIsOpen] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,9 +65,9 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
+    
     if (!selectedOption) {
       alert("Please select an option from the dropdown")
       return
@@ -77,17 +78,46 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
       return
     }
 
-    console.log("Form submitted:", {
-      service: selectedOption,
-      ...formData
-    })
+    setIsSubmitting(true)
 
-    alert(
-      `Thank you for your ${selectedOption.toLowerCase()}! We'll get back to you within 24 hours.`
-    )
+    try {
+      // Create the full message with the selected option
+      const fullMessage = `Service: ${selectedOption}\n\nMessage:\n${formData.message}\n\nFrom: ${formData.name} (${formData.email})`
+      
+      const formDataToSend = new FormData()
+      formDataToSend.append("name", formData.name)
+      formDataToSend.append("email", formData.email)
+      formDataToSend.append("telephone", "") // Add phone field if needed
+      formDataToSend.append("message", fullMessage)
+      formDataToSend.append("subject", selectedOption)
+      formDataToSend.append("_replyto", formData.email)
+      formDataToSend.append("service", selectedOption) // Extra field for tracking
 
-    setSelectedOption("")
-    setFormData({ name: "", email: "", message: "" })
+      const response = await fetch("https://formspree.io/f/mgedowaj", {
+        method: "POST",
+        body: formDataToSend,
+        headers: {
+          "Accept": "application/json"
+        }
+      })
+
+      if (response.ok) {
+        alert(
+          `Thank you for your ${selectedOption.toLowerCase()}! We'll get back to you within 24 hours.`
+        )
+        
+        // Reset form
+        setSelectedOption("")
+        setFormData({ name: "", email: "", message: "" })
+      } else {
+        throw new Error("Form submission failed")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("Something went wrong. Please try again or contact us directly at alosa.louis@gmail.com")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const buttonLabel = selectedOption
@@ -96,7 +126,10 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
 
   return (
     <section id="contact-form" className="bg-soft-gray px-5 py-8 rounded-2xl h-full">
-      <form onSubmit={handleSubmit} className="bg-neutral-gray flex flex-col gap-5 p-6 rounded-[8px]">
+      <form 
+        onSubmit={handleSubmit} 
+        className="bg-neutral-gray flex flex-col gap-5 p-6 rounded-[8px]"
+      >
 
         <div>
           <label
@@ -114,6 +147,7 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
             placeholder="Enter your full name"
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
             required
+            maxLength={70}
           />
         </div>
 
@@ -135,6 +169,9 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
             required
           />
         </div>
+
+        {/* Hidden phone field for Formspree compatibility */}
+        <input type="hidden" name="telephone" value="" />
 
         <div className="relative">
           <label className="block font-fredoka font-[400] text-dark-charcoal mb-2 text-[16px]">
@@ -195,18 +232,23 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
             placeholder={dynamicPlaceholder}
             className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all min-h-[120px] resize-vertical"
             required
+            minLength={1}
+            maxLength={1500}
           />
         </div>
 
         <button
           type="submit"
-          className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg shadow-md w-full px-4 py-3"
+          disabled={isSubmitting}
+          className={`bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg shadow-md w-full px-4 py-3 ${
+            isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+          }`}
         >
-          {buttonLabel}
+          {isSubmitting ? "Sending..." : buttonLabel}
         </button>
       </form>
     </section>
   )
 }
 
-export default ContactMeRight;
+export default ContactMeRight
