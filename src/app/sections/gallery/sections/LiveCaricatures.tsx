@@ -220,7 +220,7 @@ const LiveCaricatures = () => {
               {activeIndex > 0 && (
                 <button
                   onClick={showPrevious}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/25 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl cursor-pointer"
                   aria-label="Previous"
                 >
                   ‹
@@ -230,7 +230,7 @@ const LiveCaricatures = () => {
               {activeIndex < images.length - 1 && (
                 <button
                   onClick={showNext}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/15 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl hover:bg-black hover:scale-110 transition-all duration-200 z-50"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/25 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl cursor-pointer"
                   aria-label="Next"
                 >
                   ›
