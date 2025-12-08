@@ -158,7 +158,8 @@ const Illustrations = () => {
           </div>
         )}
 
-        {!isMobile && activeIndex !== null && (
+        {/* Desktop popup temporarily disabled */}
+        {/* {!isMobile && activeIndex !== null && (
           <div className="absolute inset-0 z-20 bg-black/90 flex items-center justify-center rounded-[16px] overflow-hidden h-full">
             <div className="relative w-full h-full max-w-[95%] max-h-[95%] flex items-center justify-center">
               <Image
@@ -203,7 +204,7 @@ const Illustrations = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   )
