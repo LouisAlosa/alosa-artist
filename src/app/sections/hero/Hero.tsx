@@ -157,7 +157,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle - Adjusted left spacing and width */}
-          <p className="font-inter text-[18px] lg:text-[20px] font-[400] leading-[32px] tracking-[0%] text-light-gray mb-8 max-w-full lg:max-w-2xl ml-0">
+          <p className="font-inter text-[18px] lg:text-[20px] font-[400] leading-[32px] tracking-[0%] text-light-gray mb-8 max-w-full lg:max-w-3xl ml-0">
             Get yourself and your loved ones personalized caricatures as memorable gifts. 
             You can also bring your event to life with custom live caricatures drawn by me.
           </p>
@@ -170,7 +170,7 @@ const Hero = () => {
                 contactSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg mb-12 w-full max-w-[213px] px-4 py-3 ml-0"
+            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] text-pure-white rounded-lg mb-4 w-full max-w-[213px] px-4 py-3 ml-0"
           >
             Get Your Caricature
           </button>
