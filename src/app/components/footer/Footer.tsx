@@ -37,7 +37,7 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-4 mt-6">
+          <div className="flex lg:items-center gap-4 mt-6">
             <Link href="http://www.facebook.com/alosaarts" aria-label="Facebook" className="hover:opacity-80" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-white">
                 <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z" />
@@ -75,9 +75,9 @@ const Footer = () => {
         </div>
 
         {/* Quick Links - Centered vertical list */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col lg:items-center">
           <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-4 md:mb-6">Quick Links</h3>
-          <ul className="flex flex-col items-center gap-3 font-inter text-[16px] md:text-[17px] lg:text-[18px] font-[400]">
+          <ul className="flex flex-col lg:items-center gap-3 font-inter text-[16px] md:text-[17px] lg:text-[18px] font-[400]">
             <li><Link href="#about" className="hover:underline">About</Link></li>
             <li><Link href="#services" className="hover:underline">Services</Link></li>
             <li><Link href="#gallery" className="hover:underline">Gallery</Link></li>
@@ -87,9 +87,9 @@ const Footer = () => {
         </div>
 
         {/* Contact Info - Right aligned */}
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col lg:items-end">
           <h3 className="font-fredoka font-[400] text-[20px] md:text-[24px] mb-3">Contact Info</h3>
-          <ul className="flex flex-col gap-3 font-inter text-[16px] md:text-[18px] font-[400] items-end">
+          <ul className="flex flex-col gap-3 font-inter text-[16px] md:text-[18px] font-[400] lg:items-end">
             <li className="flex items-center gap-2">
               <Image 
                 src={emailFillIcon} 
@@ -120,7 +120,7 @@ const Footer = () => {
       <hr className="border-gray-300 mt-8 mb-6" />
 
       {/* Bottom Copyright Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0">
+      <div className="flex flex-col md:flex-row justify-between lg:items-center gap-3 md:gap-0">
         <p className="text-[15px] md:text-[16px] lg:text-[18px] font-[400]">
           © 2025 Alosa Arts. All rights reserved.
         </p>
