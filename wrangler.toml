@@ -1,7 +1,6 @@
 name = "alosa-worker"
+main = "src/index.ts"
 compatibility_date = "2025-12-18"
 
-# Workers site (static assets)
 [site]
 bucket = "./src/app/assets"
-entry-point = "workers-site"
