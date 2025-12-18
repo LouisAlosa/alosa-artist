@@ -27,6 +27,8 @@ export const SOCIAL = {
   location: "Nairobi, Kenya",
 };
 
+export const LOGO_PATH = "/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png";
+
 export function getSiteUrl() {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   try {
@@ -53,7 +55,7 @@ export function createMetadata({
   images?: string[];
 } = {}): Metadata {
   const base = getSiteUrl();
-  const ogImages = (images && images.length > 0 ? images : ["/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png"]).map(
+  const ogImages = (images && images.length > 0 ? images : [LOGO_PATH]).map(
     (src) => absoluteUrl(src)
   );
 
@@ -88,8 +90,12 @@ export function createMetadata({
       creator: "@mrlouisalosa",
     },
     icons: {
-      icon: "/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png",
-      apple: "/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png",
+      icon: LOGO_PATH,
+      shortcut: LOGO_PATH,
+      apple: LOGO_PATH,
+      other: [
+        { rel: "icon", url: "/favicon.ico" },
+      ],
     },
   };
 }
