@@ -127,7 +127,7 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
       formDataToSend.append("_replyto", formData.email)
       formDataToSend.append("service", selectedOption)
 
-      const response = await fetch("https://formspree.io/f/mgedowaj", {
+      const response = await fetch("https://formspree.io/f/xnjaarqo", {
         method: "POST",
         body: formDataToSend,
         headers: {
