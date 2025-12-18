@@ -69,11 +69,13 @@ const FullGalleryDigitalCaricatures = () => {
               key={index}
               className="relative w-full h-[300px] md:h-[320px] rounded-lg overflow-hidden"
             >
-              <Image 
-                src={image.src} 
-                alt={image.alt} 
-                fill 
-                className="object-cover transition-transform duration-300 hover:scale-105" 
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                placeholder="blur"
+                className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
           ))}
