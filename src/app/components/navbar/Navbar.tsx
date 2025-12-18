@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import AlosaLogo from "../../assets/images/alosa-logo.png"
+import AlosaLogo from "../../assets/images/alosa-arts-caricature-alosa-logo-nairobi-kenya.png"
 import { useState, useEffect } from "react";
 
 const Navbar = () => {

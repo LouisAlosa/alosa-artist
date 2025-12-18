@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seo:images": "node scripts/seo-rename-images.mjs",
+    "seo:images:write": "node scripts/seo-rename-images.mjs --write"
   },
   "dependencies": {
     "next": "15.5.7",

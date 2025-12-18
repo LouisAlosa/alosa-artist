@@ -2,12 +2,12 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-import leftTop from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import leftBottom1 from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-left.jpg"
-import leftBottom2 from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-bottom-right.jpg"
-import middle from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-middle.jpg"
-import rightTop from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-right-top.jpg"
-import rightBottom from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-right-bottom.jpg"
+import leftTop from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg"
+import leftBottom1 from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto.jpg"
+import leftBottom2 from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto-2.jpg"
+import middle from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg"
+import rightTop from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-top.jpg"
+import rightBottom from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-bott.jpg"
 
 const DigitalCaricatures = () => {
   const images = [

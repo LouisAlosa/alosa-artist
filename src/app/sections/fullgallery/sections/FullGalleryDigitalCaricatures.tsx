@@ -4,31 +4,31 @@ import Image from "next/image"
 import { useState } from "react"
 
 // First 4 images first column
-import first from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-left-top.jpg"
-import second from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesfirstColumn2.jpg"
-import third from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesfirstColumn3.jpg"
-import fourth from "../../../assets/images/gallery/digitalcaricatures/digital-caricatures-middle.jpg"
+import first from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg"
+import second from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn2.jpg"
+import third from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn3.jpg"
+import fourth from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg"
 
 // second column 4 images
-import SecondCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnTop1.jpg"
-import SecondCsecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnTop2.jpg"
-import SecondCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnMiddle.jpg"
-import SecondCfourth from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesSecondColumnBottom1.jpg"
+import SecondCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-3.jpg"
+import SecondCsecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-4.jpg"
+import SecondCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-2.jpg"
+import SecondCfourth from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn.jpg"
 
 // third column 4 images
-import thirdCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn1.jpg"
-import thirdCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn2.jpg"
-import thirdCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesMiddleColumn3.jpg"
+import thirdCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn.jpg"
+import thirdCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-2.jpg"
+import thirdCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-3.jpg"
 
 // fourth column 3 images
-import FourthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftTop1.jpg"
-import FourthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftTop2.jpg"
-import FourthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRightLeftMain.jpg"
+import FourthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop.jpg"
+import FourthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop-2.jpg"
+import FourthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightleftmai.jpg"
 
 // fifth column 3 images
-import FifthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight1.jpg"
-import FifthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight2.jpg"
-import FifthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/digitalCaricaturesRight3.jpg"
+import FifthCfirst from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright1-nairo.jpg"
+import FifthCSecond from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright2-nairo.jpg"
+import FifthCthird from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright3-nairo.jpg"
 
 const FullGalleryDigitalCaricatures = () => {
   const allImages = [

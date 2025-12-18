@@ -3,18 +3,18 @@
 import Image from "next/image";
 
 // ✅ Replace with your actual imports later
-import live1 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures1.jpg";
-import live2 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures2.jpg";
-import live3 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures3.jpg";
-import live4 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures4.jpg";
-import live5 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures5.jpg";
-import live6 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures6.jpg";
-import live7 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures7.jpg";
-import live8 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures8.jpg";
-import live9 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures9.jpg";
-import live10 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures10.jpg";
-import live11 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures11.jpg";
-import live12 from "../../../assets/images/gallery/fullgallery/livecaricatures/livecaricatures12.jpg";
+import live1 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures1-nairobi-kenya.jpg";
+import live2 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures2-nairobi-kenya.jpg";
+import live3 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures3-nairobi-kenya.jpg";
+import live4 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures4-nairobi-kenya.jpg";
+import live5 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures5-nairobi-kenya.jpg";
+import live6 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures6-nairobi-kenya.jpg";
+import live7 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures7-nairobi-kenya.jpg";
+import live8 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures8-nairobi-kenya.jpg";
+import live9 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures9-nairobi-kenya.jpg";
+import live10 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures10-nairobi-kenya.jpg";
+import live11 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures11-nairobi-kenya.jpg";
+import live12 from "../../../assets/images/gallery/fullgallery/livecaricatures/alosa-arts-live-caricature-livecaricatures12-nairobi-kenya.jpg";
 
 const liveImages = [
   { id: 1, src: live1, alt: "Live caricature 1" },

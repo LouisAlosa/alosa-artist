@@ -6,7 +6,7 @@ type Props = {
 
 export default function SeoJsonLd({ type = "organization" }: Props) {
   const base = absoluteUrl("/");
-  const logo = absoluteUrl("/assets/alosa-logo.png");
+  const logo = absoluteUrl("/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png");
 
   const common = {
     "@context": "https://schema.org",

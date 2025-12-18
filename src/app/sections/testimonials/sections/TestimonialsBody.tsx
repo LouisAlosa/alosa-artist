@@ -2,9 +2,9 @@
 import { useState } from "react"
 import Image from "next/image"
 
-import person1 from "../../../assets/images/testimonials/JobKIm.jpg"
-import person2 from "../../../assets/images/testimonials/SerenaNdekeremo.jpg"
-import person3 from "../../../assets/images/testimonials/AngelaOkutoyi.jpg"
+import person1 from "../../../assets/images/testimonials/alosa-arts-caricature-jobkim-nairobi-kenya.jpg"
+import person2 from "../../../assets/images/testimonials/alosa-arts-caricature-serenandekeremo-nairobi-kenya.jpg"
+import person3 from "../../../assets/images/testimonials/alosa-arts-caricature-angelaokutoyi-nairobi-kenya.jpg"
 
 const TestimonialsBody = () => {
   const testimonials = [

@@ -1,0 +1,234 @@
+[
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto-2.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-left-botto-2.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto-2.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-left-botto.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-bott.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-right-bott.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-bott.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-top.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg",
+    "fromName": "alosa-arts-digital-caricature-digital-caricatures-right-top.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg",
+    "relFrom": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-top.jpg",
+    "relTo": "src/app/assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn2.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn2.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn2.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn3.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn3.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesfirstcolumn3.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-2.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-2.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-2.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-2.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-3.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-3.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-3.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn-3.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-4.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesmiddlecolumn.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-5.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright1-nairo.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesright1-nairo.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright1-nairo.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-6.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright2-nairo.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-7.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesright2-nairo.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-7.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright2-nairo.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-7.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright3-nairo.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-8.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesright3-nairo.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-8.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesright3-nairo.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-8.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightleftmai.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-9.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesrightleftmai.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-9.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightleftmai.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-9.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop-2.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-10.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesrightlefttop-2.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-10.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop-2.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-10.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-11.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturesrightlefttop.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-11.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-11.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-2.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-12.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-2.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-12.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-2.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-12.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-3.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-13.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-3.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-13.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-3.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-13.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-4.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-14.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-4.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-14.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn-4.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-14.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-15.jpg",
+    "fromName": "alosa-arts-digital-caricature-digitalcaricaturessecondcolumn.jpg",
+    "toName": "alosa-arts-digital-caricature-alosa-arts-digital-caricature-15.jpg",
+    "relFrom": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturessecondcolumn.jpg",
+    "relTo": "src/app/assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-alosa-arts-digital-caricature-15.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-bottom-nairobi-k.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/illustrations/alosa-arts-illustration-alosa-arts-illustration-illustration.jpg",
+    "fromName": "alosa-arts-illustration-illustration-middle-bottom-nairobi-k.jpg",
+    "toName": "alosa-arts-illustration-alosa-arts-illustration-illustration.jpg",
+    "relFrom": "src/app/assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-bottom-nairobi-k.jpg",
+    "relTo": "src/app/assets/images/gallery/illustrations/alosa-arts-illustration-alosa-arts-illustration-illustration.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-top-nairobi-keny.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/illustrations/alosa-arts-illustration-alosa-arts-illustration-illustration-2.jpg",
+    "fromName": "alosa-arts-illustration-illustration-middle-top-nairobi-keny.jpg",
+    "toName": "alosa-arts-illustration-alosa-arts-illustration-illustration-2.jpg",
+    "relFrom": "src/app/assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-top-nairobi-keny.jpg",
+    "relTo": "src/app/assets/images/gallery/illustrations/alosa-arts-illustration-alosa-arts-illustration-illustration-2.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-left.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-left-bottom-left.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-left.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-righ.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-2.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-left-bottom-righ.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-2.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-righ.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-2.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-top-nairobi.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-3.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-left-top-nairobi.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-3.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-top-nairobi.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-3.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-middle-nairobi-k.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-4.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-middle-nairobi-k.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-4.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-middle-nairobi-k.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-4.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-bottom-nai.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-5.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-right-bottom-nai.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-5.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-bottom-nai.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-5.jpg"
+  },
+  {
+    "fromAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-top-nairob.jpg",
+    "toAbs": "/home/rhino/Projects/Alosa/alosa-artist/src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-6.jpg",
+    "fromName": "alosa-arts-live-caricature-live-caricatures-right-top-nairob.jpg",
+    "toName": "alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-6.jpg",
+    "relFrom": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-top-nairob.jpg",
+    "relTo": "src/app/assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-alosa-arts-live-caricature-live-c-6.jpg"
+  }
+]

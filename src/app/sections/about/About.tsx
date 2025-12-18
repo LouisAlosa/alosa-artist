@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image"
-import MainCaricature from "../../assets/images/about/main-alosa.jpg"
-import SmallCaricature from "../../assets/images/about/mini-alosa-about.jpg"
-import mediaColaboration from "../../assets/images/about/media_collaborations.svg"
-import notableEvents from "../../assets/images/about/notable_events.svg"
+import MainCaricature from "../../assets/images/about/alosa-arts-caricature-main-alosa-nairobi-kenya.jpg"
+import SmallCaricature from "../../assets/images/about/alosa-arts-caricature-mini-alosa-about-nairobi-kenya.jpg"
+import mediaColaboration from "../../assets/images/about/alosa-arts-caricature-media-collaborations-nairobi-kenya.svg"
+import notableEvents from "../../assets/images/about/alosa-arts-caricature-notable-events-nairobi-kenya.svg"
 
 const AboutAlosa = () => {
   return (

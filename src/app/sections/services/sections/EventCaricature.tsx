@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import eventcaricatureimage from "../../../assets/images/myservices-events/colored-caricature.jpg"
+import eventcaricatureimage from "../../../assets/images/myservices-events/alosa-arts-caricature-colored-caricature-nairobi-kenya.jpg"
 
 interface EventCaricatureProps {
   onOrderPackage?: (packageType: string, serviceType: string) => void

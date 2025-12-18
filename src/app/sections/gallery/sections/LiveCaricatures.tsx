@@ -2,12 +2,12 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-import leftTop from "../../../assets/images/gallery/liveCaricatures/live-caricatures-left-top.jpg"
-import leftBottom1 from "../../../assets/images/gallery/liveCaricatures/live-caricatures-left-bottom-left.jpg"
-import leftBottom2 from "../../../assets/images/gallery/liveCaricatures/live-caricatures-left-bottom-right.jpg"
-import middle from "../../../assets/images/gallery/liveCaricatures/live-caricatures-middle.jpg"
-import rightTop from "../../../assets/images/gallery/liveCaricatures/live-caricatures-right-top.jpg"
-import rightBottom from "../../../assets/images/gallery/liveCaricatures/live-caricatures-right-bottom.jpg"
+import leftTop from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-top-nairobi.jpg"
+import leftBottom1 from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-left.jpg"
+import leftBottom2 from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-left-bottom-righ.jpg"
+import middle from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-middle-nairobi-k.jpg"
+import rightTop from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-top-nairob.jpg"
+import rightBottom from "../../../assets/images/gallery/liveCaricatures/alosa-arts-live-caricature-live-caricatures-right-bottom-nai.jpg"
 
 const LiveCaricatures = () => {
   const images = [

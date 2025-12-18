@@ -3,8 +3,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import logo from "../../assets/images/alosa-logo.png"
-import emailFillIcon from "../../assets/images/footer/emailfillicon.svg";
+import logo from "../../assets/images/alosa-arts-caricature-alosa-logo-nairobi-kenya.png"
+import emailFillIcon from "../../assets/images/footer/alosa-arts-caricature-emailfillicon-nairobi-kenya.svg";
 
 const Footer = () => {
   return (

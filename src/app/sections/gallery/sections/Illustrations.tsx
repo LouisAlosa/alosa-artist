@@ -2,10 +2,10 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-import illustration1 from "../../../assets/images/gallery/illustrations/illustration-left.jpg"
-import illustration2 from "../../../assets/images/gallery/illustrations/illustration-middle-top.jpg"
-import illustration3 from "../../../assets/images/gallery/illustrations/illustration-middle-bottom.jpg"
-import illustration4 from "../../../assets/images/gallery/illustrations/illustration-right.jpg"
+import illustration1 from "../../../assets/images/gallery/illustrations/alosa-arts-illustration-illustration-left-nairobi-kenya.jpg"
+import illustration2 from "../../../assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-top-nairobi-keny.jpg"
+import illustration3 from "../../../assets/images/gallery/illustrations/alosa-arts-illustration-illustration-middle-bottom-nairobi-k.jpg"
+import illustration4 from "../../../assets/images/gallery/illustrations/alosa-arts-illustration-illustration-right-nairobi-kenya.jpg"
 
 const Illustrations = () => {
   const images = [

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import WeddingCardsimage from "../../../assets/images/myservices-events/weddingEcards.jpg"
+import WeddingCardsimage from "../../../assets/images/myservices-events/alosa-arts-wedding-caricature-weddingecards-nairobi-kenya.jpg"
 
 interface WeddingCardsProps {
   onOrderPackage?: (packageType: string, serviceType: string) => void

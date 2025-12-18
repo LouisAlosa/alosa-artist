@@ -13,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#111827",
     icons: [
       {
-        src: absoluteUrl("/assets/alosa-logo.png"),
+        src: absoluteUrl("/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png"),
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",

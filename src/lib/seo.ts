@@ -53,7 +53,7 @@ export function createMetadata({
   images?: string[];
 } = {}): Metadata {
   const base = getSiteUrl();
-  const ogImages = (images && images.length > 0 ? images : ["/assets/alosa-logo.png"]).map(
+  const ogImages = (images && images.length > 0 ? images : ["/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png"]).map(
     (src) => absoluteUrl(src)
   );
 
@@ -88,8 +88,8 @@ export function createMetadata({
       creator: "@mrlouisalosa",
     },
     icons: {
-      icon: "/assets/alosa-logo.png",
-      apple: "/assets/alosa-logo.png",
+      icon: "/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png",
+      apple: "/assets/alosa-arts-caricature-alosa-logo-nairobi-kenya.png",
     },
   };
 }
