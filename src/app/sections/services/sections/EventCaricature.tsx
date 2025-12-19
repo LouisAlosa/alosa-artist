@@ -82,7 +82,7 @@ const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Branded papers with company or event logo have an additional charge of{" "}
-                <span className="text-carrot-orange">Ksh. 2,000 / USD 20 per hour.</span>
+                <span className="text-carrot-orange">Ksh. 1,000 / USD 10 per hour.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 For gigs outside Nairobi, transport and accommodation (where applicable) are covered by the client.
@@ -120,7 +120,7 @@ const EventCaricature = ({ onOrderPackage }: EventCaricatureProps) => {
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 Branded papers with company or event logo have an additional charge of{" "}
-                <span className="text-carrot-orange">Ksh. 2,000 / USD 20 per hour.</span>
+                <span className="text-carrot-orange">Ksh. 1,000 / USD 10 per hour.</span>
               </li>
               <li className="font-inter text-[18px] text-medium-gray">
                 For gigs outside Nairobi, transport and accommodation (where applicable) are covered by the client.
