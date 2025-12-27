@@ -99,7 +99,6 @@ export default function NotFound() {
               sm:text-base
               md:text-lg
               text-gray-500
-              max-w-xl
               mx-auto
             "
           >
