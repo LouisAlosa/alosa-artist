@@ -4,7 +4,7 @@ import Image from "next/image"
 
 import leftTop from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-top-n.jpg"
 import leftBottom1 from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto.jpg"
-import leftBottom2 from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-left-botto-2.jpg"
+import leftBottom2 from "../../../assets/images/gallery/fullgallery/digitalCaricatures/alosa-arts-digital-caricature-digitalcaricaturesrightlefttop-2.png"
 import middle from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-middle-nai.jpg"
 import rightTop from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-top.jpg"
 import rightBottom from "../../../assets/images/gallery/digitalcaricatures/alosa-arts-digital-caricature-digital-caricatures-right-bott.jpg"
