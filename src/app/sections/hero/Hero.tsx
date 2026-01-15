@@ -144,7 +144,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-deep-charcoal opacity-92 z-[1]" />
 
       {/* Main Content */}
-      <div className="relative z-10 w-full mx-auto px-[5%] lg:px-[7%]">
+      <div className="relative z-10 w-full mx-auto mt-4 px-[5%] lg:px-[7%]">
         <div
           className={`max-w-4xl transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -170,7 +170,7 @@ const Hero = () => {
                 contactSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] text-pure-white rounded-lg mb-4 w-full max-w-[213px] px-4 py-3 ml-0"
+            className="bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] text-pure-white rounded-lg mb-4 w-full max-w-[213px] px-4 pb-4 py-3 mt-8 mb-4 ml-0"
           >
             Get Your Caricature
           </button>
