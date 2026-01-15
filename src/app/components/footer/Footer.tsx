@@ -122,7 +122,7 @@ const Footer = () => {
       {/* Bottom Copyright Section */}
       <div className="flex flex-col md:flex-row justify-between lg:items-center gap-3 md:gap-0">
         <p className="text-[15px] md:text-[16px] lg:text-[18px] font-[400]">
-          © 2025 Alosa Arts. All rights reserved.
+          © {new Date().getFullYear()} Alosa Arts. All rights reserved.
         </p>
         <p className="text-[15px] md:text-[16px] lg:text-[18px] font-[400]">
           Designed by{" "}

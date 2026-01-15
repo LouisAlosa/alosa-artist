@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 // ✅ Replace with your actual imports later
-import ill1 from "../../../assets/images/gallery/fullgallery/illustrations/alosa-arts-illustration-illustration1-nairobi-kenya.jpg";
+import ill1 from "../../../assets/images/gallery/fullgallery/illustrations/alosa-arts-illustration-illustration1-nairobi-kenya.png";
 import ill2 from "../../../assets/images/gallery/fullgallery/illustrations/alosa-arts-illustration-illustration2-nairobi-kenya.jpg";
 import ill3 from "../../../assets/images/gallery/fullgallery/illustrations/alosa-arts-illustration-illustration3-nairobi-kenya.jpg";
 import ill4 from "../../../assets/images/gallery/fullgallery/illustrations/alosa-arts-illustration-illustration4-nairobi-kenya.jpg";
