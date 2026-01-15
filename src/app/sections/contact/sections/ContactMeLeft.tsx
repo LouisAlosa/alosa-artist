@@ -32,8 +32,7 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="none"
-                  stroke="currentColor"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -55,8 +54,7 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="none"
-                  stroke="currentColor"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -78,8 +76,7 @@ const ContactMeLeft = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-carrot-orange"
-                  fill="none"
-                  stroke="currentColor"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
