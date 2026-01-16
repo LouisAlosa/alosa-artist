@@ -40,6 +40,7 @@ const Illustrations = () => {
   return (
     <section className="bg-soft-gray w-full py-10 md:px-[5%] relative">
       <div className="max-w-[1200px] mx-auto relative">
+        {/* MOBILE POPUP - EXACT ORIGINAL STYLING */}
         {isMobile && activeIndex !== null ? (
           <div className="w-full aspect-[4/3] relative mx-auto rounded-[16px] overflow-hidden">
             <Image
@@ -90,14 +91,15 @@ const Illustrations = () => {
             </div>
           </div>
         ) : (
+          /* GRID VIEW - Adjusted for mobile layout */
           <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:h-[640px] lg:h-[720px] lg:max-h-[75vh] transition-all duration-300 ${
+            className={`grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 md:h-[640px] lg:h-[720px] lg:max-h-[75vh] transition-all duration-300 ${
               activeIndex !== null && !isMobile ? "opacity-40 md:opacity-100" : "opacity-100"
             }`}
           >
             {/* LEFT LARGE IMAGE */}
             <div
-              className="relative w-full h-full cursor-pointer group overflow-hidden rounded-[16px]"
+              className="relative w-full aspect-[4/3] md:aspect-auto md:h-full cursor-pointer group overflow-hidden rounded-[16px] col-span-2 md:col-span-1"
               onClick={() => handleImageClick(0)}
             >
               <Image
@@ -110,9 +112,8 @@ const Illustrations = () => {
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[16px]" />
             </div>
 
-            {/* CENTER COLUMN */}
-            <div className="flex flex-col gap-6 h-full">
-
+            {/* CENTER COLUMN (Contains 2 images) */}
+            <div className="grid grid-cols-2 gap-4 md:flex md:flex-col md:gap-6 h-full col-span-2 md:col-span-1">
               {/* Middle Top */}
               <div
                 className="relative w-full aspect-[4/3] flex-shrink-0 cursor-pointer group overflow-hidden rounded-[16px]"
@@ -144,7 +145,7 @@ const Illustrations = () => {
 
             {/* RIGHT LARGE IMAGE */}
             <div
-              className="relative w-full h-full cursor-pointer group overflow-hidden rounded-[16px]"
+              className="relative w-full aspect-[4/3] md:aspect-auto md:h-full cursor-pointer group overflow-hidden rounded-[16px] col-span-2 md:col-span-1"
               onClick={() => handleImageClick(3)}
             >
               <Image
@@ -158,7 +159,7 @@ const Illustrations = () => {
           </div>
         )}
 
-        {/* Desktop popup temporarily disabled */}
+        {/* DESKTOP POPUP - EXACT ORIGINAL STYLING (Commented out as per your request) */}
         {/* {!isMobile && activeIndex !== null && (
           <div className="absolute inset-0 z-20 bg-black/90 flex items-center justify-center rounded-[16px] overflow-hidden h-full">
             <div className="relative w-full h-full max-w-[95%] max-h-[95%] flex items-center justify-center">
