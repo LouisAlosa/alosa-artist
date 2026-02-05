@@ -18,6 +18,11 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
     email: "",
     message: ""
   })
+  const [touched, setTouched] = useState({
+    name: false,
+    email: false,
+    message: false,
+  })
 
   const options = [
     "Order a caricature from photos",
@@ -94,6 +99,25 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
+
+  const handleBlur = (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name } = e.target
+    setTouched(prev => ({ ...prev, [name]: true }))
+  }
+
+  const trimmedName = formData.name.trim()
+  const trimmedEmail = formData.email.trim()
+  const trimmedMessage = formData.message.trim()
+
+  const isNameValid = trimmedName.length > 0
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  const isEmailValid = emailRegex.test(trimmedEmail)
+  const minMessageLength = 20
+  const isMessageValid = trimmedMessage.length >= minMessageLength
+  const hasOptionSelected = !!selectedOption
+  const canSubmit = isNameValid && isEmailValid && isMessageValid && hasOptionSelected && !isSubmitting
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -240,11 +264,19 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
               name="name"
               value={formData.name}
               onChange={handleInputChange}
+              onBlur={handleBlur}
               placeholder="Enter your full name"
-              className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
+              className={`bg-pure-white w-full border rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all ${
+                touched.name && !isNameValid
+                  ? "border-red-400 focus:ring-red-500"
+                  : "border-gray-200 focus:ring-carrot-orange focus:border-transparent"
+              }`}
               required
               maxLength={70}
             />
+            {touched.name && !isNameValid && (
+              <p className="mt-1 text-sm text-red-600 font-inter" id="name-error">Please enter your name.</p>
+            )}
           </div>
 
           <div>
@@ -260,10 +292,28 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
+              onBlur={handleBlur}
               placeholder="Enter your email address"
-              className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all"
+              className={`w-full border rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all ${
+                !isNameValid
+                  ? "bg-gray-100 border-gray-200 cursor-not-allowed"
+                  : "bg-pure-white "
+              } ${
+                touched.email && !isEmailValid && isNameValid
+                  ? "border-red-400 focus:ring-red-500"
+                  : "border-gray-200 focus:ring-carrot-orange focus:border-transparent"
+              }`}
+              disabled={!isNameValid}
+              aria-disabled={!isNameValid}
+              title={!isNameValid ? "Enter your name first" : undefined}
               required
             />
+            {!isNameValid && (
+              <p className="mt-1 text-sm text-medium-gray font-inter">Enter your name to enable email.</p>
+            )}
+            {touched.email && isNameValid && !isEmailValid && (
+              <p className="mt-1 text-sm text-red-600 font-inter" id="email-error">Please enter a valid email address.</p>
+            )}
           </div>
 
           {/* Hidden phone field for Formspree compatibility */}
@@ -311,6 +361,9 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
                 ))}
               </ul>
             )}
+            {!hasOptionSelected && (
+              <p className="mt-1 text-sm text-medium-gray font-inter">Please select what you'd like to do.</p>
+            )}
           </div>
 
           <div>
@@ -325,19 +378,32 @@ const ContactMeRight = ({ preselectedOption = "" }: ContactMeRightProps) => {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
+              onBlur={handleBlur}
               placeholder={dynamicPlaceholder}
-              className="bg-pure-white w-full border border-gray-200 rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-carrot-orange focus:border-transparent transition-all min-h-[120px] resize-vertical"
+              className={`bg-pure-white w-full border rounded-xl py-3 px-4 text-dark-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all min-h-[120px] resize-vertical ${
+                touched.message && !isMessageValid
+                  ? "border-red-400 focus:ring-red-500"
+                  : "border-gray-200 focus:ring-carrot-orange focus:border-transparent"
+              }`}
               required
-              minLength={1}
+              minLength={minMessageLength}
               maxLength={1500}
             />
+            <div className="mt-1 flex items-center justify-between">
+              <p className={`text-sm font-inter ${
+                touched.message && !isMessageValid ? "text-red-600" : "text-medium-gray"
+              }`}>
+                {`Minimum ${minMessageLength} characters.`}
+              </p>
+              <p className="text-sm text-medium-gray font-inter">{trimmedMessage.length}/{1500}</p>
+            </div>
           </div>
 
           <button
             type="submit"
-            disabled={isSubmitting}
-            className={`bg-carrot-orange hover:bg-sunset-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg shadow-md w-full px-4 py-3 ${
-              isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+            disabled={!canSubmit}
+            className={`bg-carrot-orange transition-colors duration-200 font-inter font-normal text-[14px] md:text-[16px] leading-[24px] tracking-[0%] text-pure-white rounded-lg shadow-md w-full px-4 py-3 ${
+              !canSubmit ? "opacity-50 cursor-not-allowed" : "hover:bg-sunset-orange"
             }`}
           >
             {isSubmitting ? (
